@@ -35,3 +35,15 @@ def test_staircase(capsys):
     captured = capsys.readouterr()
     output = "     #\n    ##\n   ###\n  ####\n #####\n######\n"
     assert captured.out == output
+
+
+def test_mini_max_sum(capsys):
+    q8_mini_max_sum.miniMaxSum([1, 2, 3, 4, 5])
+    captured = capsys.readouterr()
+    output = "10 14\n"
+    assert captured.out == output
+
+    q8_mini_max_sum.miniMaxSum([7, 69, 2, 221, 8974])
+    captured = capsys.readouterr()
+    output = "299 9271\n"
+    assert captured.out == output
