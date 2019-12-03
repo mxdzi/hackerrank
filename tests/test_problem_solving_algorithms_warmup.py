@@ -21,3 +21,10 @@ def test_a_very_big_sum():
 
 def test_diagonal_difference():
     assert 15 == q5_diagonal_difference.diagonalDifference([[11, 2, 4], [4, 5, 6], [10, 8, -12]])
+
+
+def test_plus_minus(capsys):
+    q6_plus_minus.plusMinus([-4, 3, -9, 0, 4, 1])
+    captured = capsys.readouterr()
+    output = "0.500000\n0.333333\n0.166667\n"
+    assert captured.out == output
