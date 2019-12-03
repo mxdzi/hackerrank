@@ -13,3 +13,7 @@ def test_simple_array_sum():
 def test_compare_the_triplets():
     assert [1, 1] == q3_compare_the_triplets.compareTriplets((5, 6, 7), (3, 6, 10))
     assert [2, 1] == q3_compare_the_triplets.compareTriplets((17, 28, 30), (99, 16, 8))
+
+
+def test_a_very_big_sum():
+    assert 5000000015 == q4_a_very_big_sum.aVeryBigSum([1000000001, 1000000002, 1000000003, 1000000004, 1000000005])
