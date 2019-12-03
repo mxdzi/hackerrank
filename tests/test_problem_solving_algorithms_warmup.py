@@ -17,3 +17,7 @@ def test_compare_the_triplets():
 
 def test_a_very_big_sum():
     assert 5000000015 == q4_a_very_big_sum.aVeryBigSum([1000000001, 1000000002, 1000000003, 1000000004, 1000000005])
+
+
+def test_diagonal_difference():
+    assert 15 == q5_diagonal_difference.diagonalDifference([[11, 2, 4], [4, 5, 6], [10, 8, -12]])
