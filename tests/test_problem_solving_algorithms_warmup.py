@@ -28,3 +28,10 @@ def test_plus_minus(capsys):
     captured = capsys.readouterr()
     output = "0.500000\n0.333333\n0.166667\n"
     assert captured.out == output
+
+
+def test_staircase(capsys):
+    q7_staircase.staircase(6)
+    captured = capsys.readouterr()
+    output = "     #\n    ##\n   ###\n  ####\n #####\n######\n"
+    assert captured.out == output

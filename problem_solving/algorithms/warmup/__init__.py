@@ -4,5 +4,6 @@ __all__ = [
     'q3_compare_the_triplets',
     'q4_a_very_big_sum',
     'q5_diagonal_difference',
-    'q6_plus_minus'
+    'q6_plus_minus',
+    'q7_staircase'
 ]
