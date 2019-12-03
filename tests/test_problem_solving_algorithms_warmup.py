@@ -47,3 +47,7 @@ def test_mini_max_sum(capsys):
     captured = capsys.readouterr()
     output = "299 9271\n"
     assert captured.out == output
+
+
+def test_birthday_cake_candles():
+    assert 2 == q9_birthday_cake_candles.birthdayCakeCandles([3, 2, 1, 3])
