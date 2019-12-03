@@ -51,3 +51,7 @@ def test_mini_max_sum(capsys):
 
 def test_birthday_cake_candles():
     assert 2 == q9_birthday_cake_candles.birthdayCakeCandles([3, 2, 1, 3])
+
+
+def test_time_conversion():
+    assert "19:05:45" == q10_time_conversion.timeConversion("07:05:45PM")

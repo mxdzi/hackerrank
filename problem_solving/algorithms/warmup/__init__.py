@@ -7,5 +7,6 @@ __all__ = [
     'q6_plus_minus',
     'q7_staircase',
     'q8_mini_max_sum',
-    'q9_birthday_cake_candles'
+    'q9_birthday_cake_candles',
+    'q10_time_conversion'
 ]
