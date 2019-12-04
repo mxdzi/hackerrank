@@ -39,3 +39,7 @@ def test_q5_python_loops(capsys):
     captured = capsys.readouterr()
     output = "0\n1\n4\n9\n16\n"
     assert captured.out == output
+
+
+def test_q6_write_a_function():
+    assert False == q6_write_a_function.is_leap(1990)
