@@ -32,3 +32,10 @@ def test_q4_python_division(capsys):
     captured = capsys.readouterr()
     output = "1\n1.3333333333333333\n"
     assert captured.out == output
+
+
+def test_q5_python_loops(capsys):
+    q5_python_loops.main(5)
+    captured = capsys.readouterr()
+    output = "0\n1\n4\n9\n16\n"
+    assert captured.out == output
