@@ -25,3 +25,10 @@ def test_q3_python_arithmetic_operators(capsys):
     captured = capsys.readouterr()
     output = "5\n1\n6\n"
     assert captured.out == output
+
+
+def test_q4_python_division(capsys):
+    q4_python_division.main(4, 3)
+    captured = capsys.readouterr()
+    output = "1\n1.3333333333333333\n"
+    assert captured.out == output
