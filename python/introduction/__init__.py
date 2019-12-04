@@ -4,5 +4,6 @@ __all__ = [
     'q3_python_arithmetic_operators',
     'q4_python_division',
     'q5_python_loops',
-    'q6_write_a_function'
+    'q6_write_a_function',
+    'q7_python_print'
 ]

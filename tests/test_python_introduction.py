@@ -43,3 +43,10 @@ def test_q5_python_loops(capsys):
 
 def test_q6_write_a_function():
     assert False == q6_write_a_function.is_leap(1990)
+
+
+def test_q7_python_print(capsys):
+    q7_python_print.main(3)
+    captured = capsys.readouterr()
+    output = "123"
+    assert captured.out == output
