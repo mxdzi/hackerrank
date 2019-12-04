@@ -18,3 +18,10 @@ def test_q2_py_if_else(capsys):
     captured = capsys.readouterr()
     output = "Not Weird\n"
     assert captured.out == output
+
+
+def test_q3_python_arithmetic_operators(capsys):
+    q3_python_arithmetic_operators.main(3, 2)
+    captured = capsys.readouterr()
+    output = "5\n1\n6\n"
+    assert captured.out == output
