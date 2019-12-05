@@ -28,3 +28,21 @@ def test_q3_nested_list(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "Berry\nHarry\n"
     assert captured.out == output
+
+
+def test_q4_finding_the_percentage(capsys, monkeypatch):
+    inputs = ["3", "Krishna 67 68 69", "Arjun 70 98 63", "Malika 52 56 60", "Malika"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_finding_the_percentage.main()
+    captured = capsys.readouterr()
+    output = "56.00\n"
+    assert captured.out == output
+
+    inputs = ["2", "Harsh 25 26.5 28", "Anurag 26 28 30", "Harsh"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_finding_the_percentage.main()
+    captured = capsys.readouterr()
+    output = "26.50\n"
+    assert captured.out == output
