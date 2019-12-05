@@ -46,3 +46,14 @@ def test_q4_finding_the_percentage(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "26.50\n"
     assert captured.out == output
+
+
+def test_q5_python_lists(capsys, monkeypatch):
+    inputs = ["12", "insert 0 5", "insert 1 10", "insert 0 6", "print", "remove 6", "append 9",
+              "append 1", "sort", "print", "pop", "reverse", "print"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_python_lists.main()
+    captured = capsys.readouterr()
+    output = "[6, 5, 10]\n[1, 5, 9, 10]\n[9, 5, 1]\n"
+    assert captured.out == output
