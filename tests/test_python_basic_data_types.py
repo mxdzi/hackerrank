@@ -18,3 +18,13 @@ def test_q2_find_the_runner_up_score(capsys):
     captured = capsys.readouterr()
     output = "5\n"
     assert captured.out == output
+
+
+def test_q3_nested_list(capsys, monkeypatch):
+    inputs = ["5", "Harry", "37.21", "Berry", "37.21", "Tina", "37.2", "Akriti", "41", "Harsh", "39"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_nested_list.main()
+    captured = capsys.readouterr()
+    output = "Berry\nHarry\n"
+    assert captured.out == output
