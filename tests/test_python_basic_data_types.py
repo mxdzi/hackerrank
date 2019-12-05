@@ -57,3 +57,13 @@ def test_q5_python_lists(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "[6, 5, 10]\n[1, 5, 9, 10]\n[9, 5, 1]\n"
     assert captured.out == output
+
+
+def test_q6_python_tuples(capsys, monkeypatch):
+    inputs = ["2", "1 2"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_python_tuples.main()
+    captured = capsys.readouterr()
+    output = str(hash((1, 2))) + '\n'
+    assert captured.out == output
