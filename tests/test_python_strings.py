@@ -22,3 +22,13 @@ def test_q4_python_mutations():
 
 def test_q5_find_a_string():
     assert 2 == q5_find_a_string.count_substring("ABCDCDC", "CDC")
+
+
+def test_q6_string_validators(capsys, monkeypatch):
+    inputs = ["qA2"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_string_validators.main()
+    captured = capsys.readouterr()
+    output = "True\nTrue\nTrue\nTrue\nTrue\n"
+    assert captured.out == output

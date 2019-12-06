@@ -3,5 +3,6 @@ __all__ = [
     'q2_python_string_split_and_join',
     'q3_whats_your_name',
     'q4_python_mutations',
-    'q5_find_a_string'
+    'q5_find_a_string',
+    'q6_string_validators'
 ]
