@@ -14,3 +14,7 @@ def test_q3_whats_your_name(capsys):
     captured = capsys.readouterr()
     output = "Hello Ross Taylor! You just delved into python.\n"
     assert captured.out == output
+
+
+def test_q4_python_mutations():
+    assert "abrackdabra" == q4_python_mutations.mutate_string("abracadabra", 5, 'k')
