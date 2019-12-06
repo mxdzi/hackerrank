@@ -18,3 +18,7 @@ def test_q3_whats_your_name(capsys):
 
 def test_q4_python_mutations():
     assert "abrackdabra" == q4_python_mutations.mutate_string("abracadabra", 5, 'k')
+
+
+def test_q5_find_a_string():
+    assert 2 == q5_find_a_string.count_substring("ABCDCDC", "CDC")
