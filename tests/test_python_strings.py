@@ -94,3 +94,22 @@ def test_q10_python_string_formatting(capsys):
     captured = capsys.readouterr()
     output = " 1  1  1  1\n 2  2  2 10\n"
     assert captured.out == output
+
+
+def test_q11_alphabet_rangoli(capsys):
+    q11_alphabet_rangoli.print_rangoli(5)
+    captured = capsys.readouterr()
+    output = ("--------e--------\n"
+              "------e-d-e------\n"
+              "----e-d-c-d-e----\n"
+              "--e-d-c-b-c-d-e--\n"
+              "e-d-c-b-a-b-c-d-e\n"
+              "--e-d-c-b-c-d-e--\n"
+              "----e-d-c-d-e----\n"
+              "------e-d-e------\n"
+              "--------e--------\n")
+    assert captured.out == output
+
+
+def test_q12_capitalize():
+    assert "Hello World" == q12_capitalize.solve("hello world")

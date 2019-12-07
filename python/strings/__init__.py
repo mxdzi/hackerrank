@@ -8,5 +8,7 @@ __all__ = [
     'q7_text_alignment',
     'q8_text_wrap',
     'q9_designer_door_mat',
-    'q10_python_string_formatting'
+    'q10_python_string_formatting',
+    'q11_alphabet_rangoli',
+    'q12_capitalize'
 ]
