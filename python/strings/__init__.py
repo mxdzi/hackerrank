@@ -6,5 +6,6 @@ __all__ = [
     'q5_find_a_string',
     'q6_string_validators',
     'q7_text_alignment',
-    'q8_text_wrap'
+    'q8_text_wrap',
+    'q9_designer_door_mat'
 ]

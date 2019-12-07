@@ -71,3 +71,19 @@ def test_q7_text_alignment(capsys, monkeypatch):
 def test_q8_text_wrap(capsys):
     output = "ABCD\nEFGH\nIJKL\nIMNO\nQRST\nUVWX\nYZ"
     assert output == q8_text_wrap.wrap("ABCDEFGHIJKLIMNOQRSTUVWXYZ", 4)
+
+
+def test_q9_designer_door_mat(capsys, monkeypatch):
+    inputs = ["7 21"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q9_designer_door_mat.main()
+    captured = capsys.readouterr()
+    output = ("---------.|.---------\n"
+              "------.|..|..|.------\n"
+              "---.|..|..|..|..|.---\n"
+              "-------WELCOME-------\n"
+              "---.|..|..|..|..|.---\n"
+              "------.|..|..|.------\n"
+              "---------.|.---------\n")
+    assert captured.out == output
