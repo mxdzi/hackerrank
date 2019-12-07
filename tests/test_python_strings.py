@@ -32,3 +32,37 @@ def test_q6_string_validators(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "True\nTrue\nTrue\nTrue\nTrue\n"
     assert captured.out == output
+
+
+def test_q7_text_alignment(capsys, monkeypatch):
+    inputs = ["5"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q7_text_alignment.main()
+    captured = capsys.readouterr()
+    output = ("    H    \n"
+              "   HHH   \n"
+              "  HHHHH  \n"
+              " HHHHHHH \n"
+              "HHHHHHHHH\n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHHHHHHHHHHHHHHHHHHHHHH   \n"
+              "  HHHHHHHHHHHHHHHHHHHHHHHHH   \n"
+              "  HHHHHHHHHHHHHHHHHHHHHHHHH   \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "  HHHHH               HHHHH             \n"
+              "                    HHHHHHHHH \n"
+              "                     HHHHHHH  \n"
+              "                      HHHHH   \n"
+              "                       HHH    \n"
+              "                        H     \n")
+    assert captured.out == output
