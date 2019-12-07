@@ -66,3 +66,8 @@ def test_q7_text_alignment(capsys, monkeypatch):
               "                       HHH    \n"
               "                        H     \n")
     assert captured.out == output
+
+
+def test_q8_text_wrap(capsys):
+    output = "ABCD\nEFGH\nIJKL\nIMNO\nQRST\nUVWX\nYZ"
+    assert output == q8_text_wrap.wrap("ABCDEFGHIJKLIMNOQRSTUVWXYZ", 4)

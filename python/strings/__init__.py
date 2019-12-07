@@ -5,5 +5,6 @@ __all__ = [
     'q4_python_mutations',
     'q5_find_a_string',
     'q6_string_validators',
-    'q7_text_alignment'
+    'q7_text_alignment',
+    'q8_text_wrap'
 ]
