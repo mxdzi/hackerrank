@@ -87,3 +87,10 @@ def test_q9_designer_door_mat(capsys, monkeypatch):
               "------.|..|..|.------\n"
               "---------.|.---------\n")
     assert captured.out == output
+
+
+def test_q10_python_string_formatting(capsys):
+    q10_python_string_formatting.print_formatted(2)
+    captured = capsys.readouterr()
+    output = " 1  1  1  1\n 2  2  2 10\n"
+    assert captured.out == output

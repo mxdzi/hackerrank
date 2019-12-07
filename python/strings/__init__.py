@@ -7,5 +7,6 @@ __all__ = [
     'q6_string_validators',
     'q7_text_alignment',
     'q8_text_wrap',
-    'q9_designer_door_mat'
+    'q9_designer_door_mat',
+    'q10_python_string_formatting'
 ]
