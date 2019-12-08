@@ -10,5 +10,6 @@ __all__ = [
     'q9_designer_door_mat',
     'q10_python_string_formatting',
     'q11_alphabet_rangoli',
-    'q12_capitalize'
+    'q12_capitalize',
+    'q13_the_minion_game'
 ]
