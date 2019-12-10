@@ -11,5 +11,6 @@ __all__ = [
     'q10_python_string_formatting',
     'q11_alphabet_rangoli',
     'q12_capitalize',
-    'q13_the_minion_game'
+    'q13_the_minion_game',
+    'q14_merge_the_tools'
 ]

@@ -174,3 +174,10 @@ def test_q13_the_minion_game(capsys):
     captured = capsys.readouterr()
     output = "Stuart 7501500\n"
     assert captured.out == output
+
+
+def test_q14_merge_the_tools(capsys):
+    q14_merge_the_tools.merge_the_tools("AABCAAADA", 3)
+    captured = capsys.readouterr()
+    output = "AB\nCA\nAD\n"
+    assert captured.out == output
