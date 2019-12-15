@@ -13,3 +13,13 @@ def test_q2_no_idea(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "1\n"
     assert captured.out == output
+
+
+def test_q3_symmetric_difference(capsys, monkeypatch):
+    inputs = ["4", "2 4 5 9", "4", "2 4 11 12"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_symmetric_difference.main()
+    captured = capsys.readouterr()
+    output = "5\n9\n11\n12\n"
+    assert captured.out == output
