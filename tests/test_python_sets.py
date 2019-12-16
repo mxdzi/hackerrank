@@ -23,3 +23,13 @@ def test_q3_symmetric_difference(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "5\n9\n11\n12\n"
     assert captured.out == output
+
+
+def test_q4_py_set_add(capsys, monkeypatch):
+    inputs = ["7", "UK", "China", "USA", "France", "New Zealand", "UK", "France"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_py_set_add.main()
+    captured = capsys.readouterr()
+    output = "5\n"
+    assert captured.out == output
