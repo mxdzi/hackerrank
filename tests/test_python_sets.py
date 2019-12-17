@@ -33,3 +33,14 @@ def test_q4_py_set_add(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "5\n"
     assert captured.out == output
+
+
+def test_q5_py_set_discard_remove_pop(capsys, monkeypatch):
+    inputs = ["9", "1 2 3 4 5 6 7 8 9", "10", "pop", "remove 9", "discard 9", "discard 8", "remove 7", "pop",
+              "discard 6", "remove 5", "pop", "discard 5"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_py_set_discard_remove_pop.main()
+    captured = capsys.readouterr()
+    output = "4\n"
+    assert captured.out == output
