@@ -3,5 +3,6 @@ __all__ = [
     'q2_no_idea',
     'q3_symmetric_difference',
     'q4_py_set_add',
-    'q5_py_set_discard_remove_pop'
+    'q5_py_set_discard_remove_pop',
+    'q6_py_set_union'
 ]

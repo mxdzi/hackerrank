@@ -44,3 +44,13 @@ def test_q5_py_set_discard_remove_pop(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "4\n"
     assert captured.out == output
+
+
+def test_q6_py_set_union(capsys, monkeypatch):
+    inputs = ["9", "1 2 3 4 5 6 7 8 9", "9", "10 1 2 3 11 21 55 6 8"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_py_set_union.main()
+    captured = capsys.readouterr()
+    output = "13\n"
+    assert captured.out == output
