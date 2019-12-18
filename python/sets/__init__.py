@@ -7,5 +7,6 @@ __all__ = [
     'q6_py_set_union',
     'q7_py_set_intersection_operation',
     'q8_py_set_difference_operation',
-    'q9_py_set_symmetric_difference_operation'
+    'q9_py_set_symmetric_difference_operation',
+    'q10_py_set_mutations'
 ]
