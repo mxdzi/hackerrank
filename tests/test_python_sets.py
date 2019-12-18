@@ -104,3 +104,13 @@ def test_q10_py_set_mutations(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "38\n"
     assert captured.out == output
+
+
+def test_q11_py_the_captains_room(capsys, monkeypatch):
+    inputs = ["5", "1 2 3 6 5 4 4 2 5 3 6 1 6 5 3 2 4 1 2 5 1 4 3 6 8 4 3 1 5 6 2"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q11_py_the_captains_room.main()
+    captured = capsys.readouterr()
+    output = "8\n"
+    assert captured.out == output
