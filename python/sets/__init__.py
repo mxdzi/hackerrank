@@ -9,5 +9,6 @@ __all__ = [
     'q8_py_set_difference_operation',
     'q9_py_set_symmetric_difference_operation',
     'q10_py_set_mutations',
-    'q11_py_the_captains_room'
+    'q11_py_the_captains_room',
+    'q12_py_check_subset'
 ]

@@ -114,3 +114,25 @@ def test_q11_py_the_captains_room(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "8\n"
     assert captured.out == output
+
+
+def test_q12_py_check_subset(capsys, monkeypatch):
+    inputs = ["3",
+              "5",
+              "1 2 3 5 6",
+              "9",
+              "9 8 5 6 3 2 1 4 7",
+              "1",
+              "2",
+              "5",
+              "3 6 5 4 1",
+              "7",
+              "1 2 3 5 6 8 9",
+              "3",
+              "9 8 2"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q12_py_check_subset.main()
+    captured = capsys.readouterr()
+    output = "True\nFalse\nFalse\n"
+    assert captured.out == output
