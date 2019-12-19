@@ -136,3 +136,16 @@ def test_q12_py_check_subset(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "True\nFalse\nFalse\n"
     assert captured.out == output
+
+
+def test_q13_py_check_strict_superset(capsys, monkeypatch):
+    inputs = ["1 2 3 4 5 6 7 8 9 10 11 12 23 45 84 78",
+              "2",
+              "1 2 3 4 5",
+              "100 11 12"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q13_py_check_strict_superset.main()
+    captured = capsys.readouterr()
+    output = "False\n"
+    assert captured.out == output
