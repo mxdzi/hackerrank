@@ -66,3 +66,16 @@ def test_q6_python_integers_come_in_all_sizes(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "4710194409608608369201743232\n"
     assert captured.out == output
+
+
+def test_q7_python_quest_1(capsys, monkeypatch):
+    inputs = ["5"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q7_python_quest_1.main()
+    captured = capsys.readouterr()
+    output = ("1\n"
+              "22\n"
+              "333\n"
+              "4444\n")
+    assert captured.out == output
