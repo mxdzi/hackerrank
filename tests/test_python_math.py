@@ -33,3 +33,15 @@ def test_q3_triangle_quest_2(capsys, monkeypatch):
               "1234321\n"
               "123454321\n")
     assert captured.out == output
+
+
+def test_q4_python_mod_divmod(capsys, monkeypatch):
+    inputs = ["177", "10"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_python_mod_divmod.main()
+    captured = capsys.readouterr()
+    output = ("17\n"
+              "7\n"
+              "(17, 7)\n")
+    assert captured.out == output
