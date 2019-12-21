@@ -26,3 +26,13 @@ def test_q2_input(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "True\n"
     assert captured.out == output
+
+
+def test_q3_python_eval(capsys, monkeypatch):
+    inputs = ["print(2 + 3)"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_python_eval.main()
+    captured = capsys.readouterr()
+    output = "5\n"
+    assert captured.out == output
