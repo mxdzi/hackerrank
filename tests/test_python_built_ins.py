@@ -36,3 +36,23 @@ def test_q3_python_eval(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "5\n"
     assert captured.out == output
+
+
+def test_q4_python_sort_sort(capsys, monkeypatch):
+    inputs = ["5 3",
+              "10 2 5",
+              "7 1 0",
+              "9 9 9",
+              "1 23 12",
+              "6 5 9",
+              "1"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_python_sort_sort.main()
+    captured = capsys.readouterr()
+    output = ("7 1 0\n"
+              "10 2 5\n"
+              "6 5 9\n"
+              "9 9 9\n"
+              "1 23 12\n")
+    assert captured.out == output
