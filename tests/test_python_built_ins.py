@@ -66,3 +66,13 @@ def test_q5_any_or_all(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "True\n"
     assert captured.out == output
+
+
+def test_q6_ginorts(capsys, monkeypatch):
+    inputs = ["Sorting1234"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_ginorts.main()
+    captured = capsys.readouterr()
+    output = "ginortS1324\n"
+    assert captured.out == output
