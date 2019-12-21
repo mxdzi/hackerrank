@@ -56,3 +56,13 @@ def test_q5_python_power_mod_power(capsys, monkeypatch):
     output = ("81\n"
               "1\n")
     assert captured.out == output
+
+
+def test_q6_python_integers_come_in_all_sizes(capsys, monkeypatch):
+    inputs = ["9", "29", "7", "27"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_python_integers_come_in_all_sizes.main()
+    captured = capsys.readouterr()
+    output = "4710194409608608369201743232\n"
+    assert captured.out == output
