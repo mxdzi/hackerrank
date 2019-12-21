@@ -16,3 +16,13 @@ def test_q1_zipped(capsys, monkeypatch):
               "90.0\n"
               "85.5\n")
     assert captured.out == output
+
+
+def test_q2_input(capsys, monkeypatch):
+    inputs = ["1 4", "x**3 + x**2 + x + 1"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_input.main()
+    captured = capsys.readouterr()
+    output = "True\n"
+    assert captured.out == output
