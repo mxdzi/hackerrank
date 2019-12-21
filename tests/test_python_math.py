@@ -45,3 +45,14 @@ def test_q4_python_mod_divmod(capsys, monkeypatch):
               "7\n"
               "(17, 7)\n")
     assert captured.out == output
+
+
+def test_q5_python_power_mod_power(capsys, monkeypatch):
+    inputs = ["3", "4", "5"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_python_power_mod_power.main()
+    captured = capsys.readouterr()
+    output = ("81\n"
+              "1\n")
+    assert captured.out == output
