@@ -19,3 +19,17 @@ def test_q2_find_angle(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "45°\n"
     assert captured.out == output
+
+
+def test_q3_triangle_quest_2(capsys, monkeypatch):
+    inputs = ["5"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_triangle_quest_2.main()
+    captured = capsys.readouterr()
+    output = ("1\n"
+              "121\n"
+              "12321\n"
+              "1234321\n"
+              "123454321\n")
+    assert captured.out == output
