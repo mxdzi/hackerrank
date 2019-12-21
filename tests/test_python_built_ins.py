@@ -56,3 +56,13 @@ def test_q4_python_sort_sort(capsys, monkeypatch):
               "9 9 9\n"
               "1 23 12\n")
     assert captured.out == output
+
+
+def test_q5_any_or_all(capsys, monkeypatch):
+    inputs = ["5", "12 9 61 5 14"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_any_or_all.main()
+    captured = capsys.readouterr()
+    output = "True\n"
+    assert captured.out == output
