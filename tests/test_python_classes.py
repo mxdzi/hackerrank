@@ -14,3 +14,16 @@ def test_q1_class_1_dealing_with_complex_numbers(capsys, monkeypatch):
               "2.24+0.00i\n"
               "7.81+0.00i\n")
     assert captured.out == output
+
+
+def test_q2_class_2_find_the_torsional_angle(capsys, monkeypatch):
+    inputs = ["0 4 5",
+              "1 7 6",
+              "0 5 9",
+              "1 7 2"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_class_2_find_the_torsional_angle.main()
+    captured = capsys.readouterr()
+    output = "8.19\n"
+    assert captured.out == output
