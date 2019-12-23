@@ -39,3 +39,13 @@ def test_q4_itertools_combinations_with_replacement(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "AA\nAC\nAH\nAK\nCC\nCH\nCK\nHH\nHK\nKK\n"
     assert captured.out == output
+
+
+def test_q5_compress_the_string(capsys, monkeypatch):
+    inputs = ["1222311"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_compress_the_string.main()
+    captured = capsys.readouterr()
+    output = "(1, 1) (3, 2) (1, 3) (2, 1)\n"
+    assert captured.out == output
