@@ -61,3 +61,16 @@ def test_q6_iterables_and_iterators(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "0.8333\n"
     assert captured.out == output
+
+
+def test_q7_maximize_it(capsys, monkeypatch):
+    inputs = ["3 1000",
+              "2 5 4",
+              "3 7 8 9",
+              "5 5 7 8 9 10"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q7_maximize_it.main()
+    captured = capsys.readouterr()
+    output = "206\n"
+    assert captured.out == output
