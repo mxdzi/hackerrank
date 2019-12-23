@@ -3,5 +3,6 @@ __all__ = [
     'q2_itertools_permutations',
     'q3_itertools_combinations',
     'q4_itertools_combinations_with_replacement',
-    'q5_compress_the_string'
+    'q5_compress_the_string',
+    'q6_iterables_and_iterators'
 ]

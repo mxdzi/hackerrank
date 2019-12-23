@@ -49,3 +49,15 @@ def test_q5_compress_the_string(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "(1, 1) (3, 2) (1, 3) (2, 1)\n"
     assert captured.out == output
+
+
+def test_q6_iterables_and_iterators(capsys, monkeypatch):
+    inputs = ["4",
+              "a a c d",
+              "2"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_iterables_and_iterators.main()
+    captured = capsys.readouterr()
+    output = "0.8333\n"
+    assert captured.out == output
