@@ -19,3 +19,13 @@ def test_q2_itertools_permutations(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "AC\nAH\nAK\nCA\nCH\nCK\nHA\nHC\nHK\nKA\nKC\nKH\n"
     assert captured.out == output
+
+
+def test_q3_itertools_combinations(capsys, monkeypatch):
+    inputs = ["HACK 2"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_itertools_combinations.main()
+    captured = capsys.readouterr()
+    output = "A\nC\nH\nK\nAC\nAH\nAK\nCH\nCK\nHK\n"
+    assert captured.out == output
