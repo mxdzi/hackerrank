@@ -3,4 +3,4 @@ SELECT
 FROM
     city
 WHERE
-    id = 1661
+    id = 1661;

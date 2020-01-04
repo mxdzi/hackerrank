@@ -3,4 +3,4 @@ SELECT
 FROM
     city
 WHERE
-    countrycode = 'JPN'
+    countrycode = 'JPN';
