@@ -3,4 +3,4 @@ SELECT
 FROM
     city
 WHERE
-    district = 'California'
+    district = 'California';
