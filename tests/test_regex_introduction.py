@@ -31,3 +31,13 @@ def test_q2_matching_anything_but_new_line(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "false\n"
     assert captured.out == output
+
+
+def test_q3_matching_digits_non_digit_character(capsys, monkeypatch):
+    inputs = ["06-11-2015"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_matching_digits_non_digit_character.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
