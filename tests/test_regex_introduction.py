@@ -13,3 +13,21 @@ def test_q1_matching_specific_string(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "Number of matches : 2\n"
     assert captured.out == output
+
+
+def test_q2_matching_anything_but_new_line(capsys, monkeypatch):
+    inputs = ["123.456.abc.def"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_matching_anything_but_new_line.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
+
+    inputs = ["1123.456.abc.def"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_matching_anything_but_new_line.main()
+    captured = capsys.readouterr()
+    output = "false\n"
+    assert captured.out == output
