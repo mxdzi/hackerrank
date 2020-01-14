@@ -61,3 +61,13 @@ def test_q5_matching_word_non_word(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "true\n"
     assert captured.out == output
+
+
+def test_q6_matching_start_end(capsys, monkeypatch):
+    inputs = ["0qwer."]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_matching_start_end.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
