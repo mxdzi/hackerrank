@@ -51,3 +51,13 @@ def test_q4_matching_whitespace_non_whitespace_character(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "true\n"
     assert captured.out == output
+
+
+def test_q5_matching_word_non_word(capsys, monkeypatch):
+    inputs = ["www.hackerrank.com"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_matching_word_non_word.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
