@@ -41,3 +41,13 @@ def test_q3_matching_digits_non_digit_character(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "true\n"
     assert captured.out == output
+
+
+def test_q4_matching_whitespace_non_whitespace_character(capsys, monkeypatch):
+    inputs = ["12 11 15"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_matching_whitespace_non_whitespace_character.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
