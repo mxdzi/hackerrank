@@ -19,3 +19,21 @@ def test_q2_capturing_non_capturing_groups(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "true\n"
     assert captured.out == output
+
+
+def test_q3_alternative_matching(capsys, monkeypatch):
+    inputs = ["Mr.DOSHI"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_alternative_matching.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
+
+    inputs = ["Ms._underscore"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_alternative_matching.main()
+    captured = capsys.readouterr()
+    output = "false\n"
+    assert captured.out == output
