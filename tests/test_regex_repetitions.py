@@ -45,3 +45,13 @@ def test_q3_matching_zero_or_more_repetitions(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "true\n"
     assert captured.out == output
+
+
+def test_q4_matching_one_or_more_repititions(capsys, monkeypatch):
+    inputs = ["1Qa"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_matching_one_or_more_repititions.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
