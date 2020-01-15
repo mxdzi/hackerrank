@@ -25,3 +25,13 @@ def test_q1_matching_specific_characters(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "false\n"
     assert captured.out == output
+
+
+def test_q2_excluding_specific_characters(capsys, monkeypatch):
+    inputs = ["think?"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_excluding_specific_characters.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
