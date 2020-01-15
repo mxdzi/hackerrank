@@ -9,3 +9,13 @@ def test_q1_matching_word_boundaries(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "true\n"
     assert captured.out == output
+
+
+def test_q2_capturing_non_capturing_groups(capsys, monkeypatch):
+    inputs = ["okokok! cya"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_capturing_non_capturing_groups.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
