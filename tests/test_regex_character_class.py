@@ -44,16 +44,16 @@ def test_q3_matching_range_of_characters(capsys, monkeypatch):
     q3_matching_range_of_characters.main()
     captured = capsys.readouterr()
     output = "true\n"
-
     assert captured.out == output
+
     inputs = ["h4CkRank"]
     monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
 
     q3_matching_range_of_characters.main()
     captured = capsys.readouterr()
     output = "true\n"
-
     assert captured.out == output
+
     inputs = ["hh4CkRank"]
     monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
 
@@ -61,4 +61,3 @@ def test_q3_matching_range_of_characters(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "false\n"
     assert captured.out == output
-
