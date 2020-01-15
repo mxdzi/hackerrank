@@ -55,3 +55,21 @@ def test_q4_matching_one_or_more_repititions(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "true\n"
     assert captured.out == output
+
+
+def test_q5_matching_ending_items(capsys, monkeypatch):
+    inputs = ["Kites"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_matching_ending_items.main()
+    captured = capsys.readouterr()
+    output = "true\n"
+    assert captured.out == output
+
+    inputs = ["1ess"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_matching_ending_items.main()
+    captured = capsys.readouterr()
+    output = "false\n"
+    assert captured.out == output
