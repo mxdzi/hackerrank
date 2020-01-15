@@ -8,20 +8,30 @@ def test_q1_matching_x_repetitions(capsys, monkeypatch):
     q1_matching_x_repetitions.main()
     captured = capsys.readouterr()
     output = "true\n"
-
     assert captured.out == output
+
     inputs = ["x4202v2A22A8a6aaaaaa2G2222m222qwertyYuIo13957"]
     monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
 
     q1_matching_x_repetitions.main()
     captured = capsys.readouterr()
     output = "true\n"
-
     assert captured.out == output
+
     inputs = ["x4202v2A22A8a6aaaaaa2G2222m222qwertyYuIo1395779"]
     monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
 
     q1_matching_x_repetitions.main()
     captured = capsys.readouterr()
     output = "false\n"
+    assert captured.out == output
+
+
+def test_q2_matching_x_y_repetitions(capsys, monkeypatch):
+    inputs = ["3threeormorealphabets."]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_matching_x_y_repetitions.main()
+    captured = capsys.readouterr()
+    output = "true\n"
     assert captured.out == output
