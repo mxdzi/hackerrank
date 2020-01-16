@@ -29,3 +29,13 @@ def test_q3_positive_lookbehind(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "Number of matches : 1\n"
     assert captured.out == output
+
+
+def test_q4_negative_lookbehind(capsys, monkeypatch):
+    inputs = ["1o1s"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_negative_lookbehind.main()
+    captured = capsys.readouterr()
+    output = "Number of matches : 3\n"
+    assert captured.out == output
