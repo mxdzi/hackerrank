@@ -5,6 +5,24 @@ def test_q2_camelcase():
     assert 5 == q2_camelcase.camelcase("saveChangesInTheEditor")
 
 
+def test_q6_mars_exploration(capsys, monkeypatch):
+    inputs = ["SOSSPSSQSSOR"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_mars_exploration.main()
+    captured = capsys.readouterr()
+    output = "3\n"
+    assert captured.out == output
+
+    inputs = ["SOSSOT"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_mars_exploration.main()
+    captured = capsys.readouterr()
+    output = "1\n"
+    assert captured.out == output
+
+
 def test_q7_hackerrank_in_a_string(capsys, monkeypatch):
     inputs = ["2",
               "hereiamstackerrank",
