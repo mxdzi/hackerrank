@@ -29,7 +29,6 @@ def test_q1_lonely_integer(capsys, monkeypatch):
     output = "2\n"
     assert captured.out == output
 
-
 def test_q2_maximizing_xor(capsys, monkeypatch):
     inputs = ["10", "15"]
     monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
@@ -39,13 +38,13 @@ def test_q2_maximizing_xor(capsys, monkeypatch):
     output = "7\n"
     assert captured.out == output
 
-    inputs = ["11", "100"]
-    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
 
-    q2_maximizing_xor.main()
-    captured = capsys.readouterr()
-    output = "127\n"
-    assert captured.out == output
+def test_q5_sum_vs_xor():
+    assert 2 == q5_sum_vs_xor.sumXor(5)
+    assert 1 == q5_sum_vs_xor.sumXor(0)
+    assert 1073741824 == q5_sum_vs_xor.sumXor(1000000000000000)
+    assert 4 == q5_sum_vs_xor.sumXor(10)
+    assert 1 == q5_sum_vs_xor.sumXor(1)
 
 
 def test_q7_flipping_bits(capsys, monkeypatch):
