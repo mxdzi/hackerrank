@@ -69,3 +69,18 @@ def test_q7_flipping_bits(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "4294967291\n4294843839\n"
     assert captured.out == output
+
+
+def test_q11_winning_lottery_ticket(capsys, monkeypatch):
+    inputs = ["5",
+              "129300455",
+              "5559948277",
+              "012334556",
+              "56789",
+              "123456879"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q11_winning_lottery_ticket.main()
+    captured = capsys.readouterr()
+    output = "5\n\n"
+    assert captured.out == output
