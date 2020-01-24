@@ -71,3 +71,13 @@ def test_q4_tree_height_of_a_binary_tree(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "3\n"
     assert captured.out == output
+
+
+def test_q6_tree_level_order_traversal(capsys, monkeypatch):
+    inputs = ["6", "1 2 5 3 6 4"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_tree_level_order_traversal.main()
+    captured = capsys.readouterr()
+    output = "1 2 5 3 6 4 "
+    assert captured.out == output
