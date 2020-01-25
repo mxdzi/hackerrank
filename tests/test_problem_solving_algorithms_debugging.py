@@ -1,6 +1,16 @@
 from problem_solving.algorithms.debugging import *
 
 
+def test_q1_prime_date(capsys, monkeypatch):
+    inputs = ["02-08-2025 04-09-2025"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q1_prime_date.main()
+    captured = capsys.readouterr()
+    output = "5\n"
+    assert captured.out == output
+
+
 def test_q3_strings_xor(capsys, monkeypatch):
     inputs = ["10101", "00101"]
     monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
