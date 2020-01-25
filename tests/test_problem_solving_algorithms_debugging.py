@@ -9,3 +9,13 @@ def test_q3_strings_xor(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "10000\n"
     assert captured.out == output
+
+
+def test_q5_smart_number(capsys, monkeypatch):
+    inputs = ["4", "1", "2", "7", "169"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_smart_number.main()
+    captured = capsys.readouterr()
+    output = "YES\nNO\nNO\nYES\n"
+    assert captured.out == output
