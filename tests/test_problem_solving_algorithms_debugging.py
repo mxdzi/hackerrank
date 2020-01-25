@@ -11,6 +11,16 @@ def test_q3_strings_xor(capsys, monkeypatch):
     assert captured.out == output
 
 
+def test_q4_zig_zag_sequence(capsys, monkeypatch):
+    inputs = ["1", "7", "1 2 3 4 5 6 7"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_zig_zag_sequence.main()
+    captured = capsys.readouterr()
+    output = "1 2 3 7 6 5 4\n"
+    assert captured.out == output
+
+
 def test_q5_smart_number(capsys, monkeypatch):
     inputs = ["4", "1", "2", "7", "169"]
     monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
