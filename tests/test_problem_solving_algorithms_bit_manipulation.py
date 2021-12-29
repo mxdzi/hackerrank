@@ -39,6 +39,11 @@ def test_q2_maximizing_xor(capsys, monkeypatch):
     assert captured.out == output
 
 
+def test_q3_counter_game():
+    assert "Richard" == q3_counter_game.counterGame(6)
+    assert "Louise" == q3_counter_game.counterGame(132)
+
+
 def test_q5_sum_vs_xor():
     assert 2 == q5_sum_vs_xor.sumXor(5)
     assert 1 == q5_sum_vs_xor.sumXor(0)
