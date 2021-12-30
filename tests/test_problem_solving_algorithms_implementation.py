@@ -1,6 +1,10 @@
 from problem_solving.algorithms.implementation import *
 
 
+def test_q1_grading_students():
+    assert [75, 67, 40, 33] == q1_grading_students.gradingStudents([73, 67, 38, 33])
+
+
 def test_q3_kangaroo():
     assert "YES" == q3_kangaroo.kangaroo(0, 3, 4, 2)
     assert "NO" == q3_kangaroo.kangaroo(0, 2, 5, 3)
