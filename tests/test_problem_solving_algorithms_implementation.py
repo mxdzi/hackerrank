@@ -14,6 +14,6 @@ def test_q7_divisible_sum_pairs():
     assert 5 == q7_divisible_sum_pairs.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2])
 
 
-def test_q10_drawing_book():
-    assert 1 == q10_drawing_book.pageCount(6, 2)
-    assert 0 == q10_drawing_book.pageCount(5, 4)
+def test_q12_drawing_book():
+    assert 1 == q12_drawing_book.pageCount(6, 2)
+    assert 0 == q12_drawing_book.pageCount(5, 4)
