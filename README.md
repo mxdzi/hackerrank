@@ -69,7 +69,7 @@ My solutions to https://www.hackerrank.com problems.
 #### Strings
 - [ ] 1 [Super Reduced String](https://www.hackerrank.com/challenges/reduced-string)
 - [x] 2 [CamelCase](https://www.hackerrank.com/challenges/camelcase)
-- [ ] 3 [Strong Password](https://www.hackerrank.com/challenges/strong-password)
+- [x] 3 [Strong Password](https://www.hackerrank.com/challenges/strong-password)
 - [ ] 4 [Two Characters](https://www.hackerrank.com/challenges/two-characters)
 - [ ] 5 [Caesar Cipher](https://www.hackerrank.com/challenges/caesar-cipher-1)
 - [x] 6 [Mars Exploration](https://www.hackerrank.com/challenges/mars-exploration)

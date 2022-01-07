@@ -5,6 +5,12 @@ def test_q2_camelcase():
     assert 5 == q2_camelcase.camelcase("saveChangesInTheEditor")
 
 
+def test_q3_strong_password():
+    assert q3_strong_password.minimumNumber("3", "Ab1") == 3
+    assert q3_strong_password.minimumNumber("11", "#HackerRank") == 1
+    assert q3_strong_password.minimumNumber("100", "dq!17+#qh*x-@s8x563og01154o*^9)7c*9-1y9o2a(^1g6(xi^m@u!6y7%v7y8mzj$t48j#rxuj22w4@6&3fr7!5*1+@l$661t)") == 1
+
+
 def test_q6_mars_exploration(capsys, monkeypatch):
     inputs = ["SOSSPSSQSSOR"]
     monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
