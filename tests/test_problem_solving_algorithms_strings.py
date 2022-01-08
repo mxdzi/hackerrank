@@ -51,6 +51,13 @@ def test_q7_hackerrank_in_a_string(capsys, monkeypatch):
     assert captured.out == output
 
 
+def test_q11_funny_string():
+    assert q11_funny_string.funnyString("acxz") == "Funny"
+    assert q11_funny_string.funnyString("bcxz") == "Not Funny"
+    assert q11_funny_string.funnyString("ivvkxq") == "Not Funny"
+    assert q11_funny_string.funnyString("ivvkx") == "Not Funny"
+
+
 def test_q21_two_strings(capsys, monkeypatch):
     inputs = ["2",
               "hello",
