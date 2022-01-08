@@ -4,7 +4,7 @@ My solutions to https://www.hackerrank.com problems.
 
 ## Problem Solving
 ### Algorithms
-#### Warmup
+#### Warmup (10/10)
 - [x] 1 [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first)
 - [x] 2 [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum)
 - [x] 3 [Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets)
@@ -15,7 +15,7 @@ My solutions to https://www.hackerrank.com problems.
 - [x] 8 [Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum)
 - [x] 9 [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles)
 - [x] 10 [Time Conversion](https://www.hackerrank.com/challenges/time-conversion)
-#### Implementation
+#### Implementation (4/50)
 - [x] 1 [Grading Students](https://www.hackerrank.com/challenges/grading)
 - [ ] 2 [Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange)
 - [x] 3 [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo)
@@ -66,7 +66,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 48 [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale)
 - [ ] 49 [The Time in Words](https://www.hackerrank.com/challenges/the-time-in-words)
 - [ ] 50 [Chocolate Feast ](https://www.hackerrank.com/challenges/chocolate-feast)
-#### Strings
+#### Strings (5/48)
 - [ ] 1 [Super Reduced String](https://www.hackerrank.com/challenges/reduced-string)
 - [x] 2 [CamelCase](https://www.hackerrank.com/challenges/camelcase)
 - [x] 3 [Strong Password](https://www.hackerrank.com/challenges/strong-password)
@@ -115,7 +115,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 46 [Letter Islands](https://www.hackerrank.com/challenges/letter-islands)
 - [ ] 47 [Pseudo-Isomorphic Substrings](https://www.hackerrank.com/challenges/pseudo-isomorphic-substrings)
 - [ ] 48 [How Many Substrings?](https://www.hackerrank.com/challenges/how-many-substrings)
-#### Sorting
+#### Sorting (2/15)
 - [x] 1 [Big Sorting](https://www.hackerrank.com/challenges/big-sorting)
 - [ ] 2 [Intro to Tutorial Challenges](https://www.hackerrank.com/challenges/tutorial-intro)
 - [ ] 3 [Insertion Sort - Part 1](https://www.hackerrank.com/challenges/insertionsort1)
@@ -131,7 +131,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 13 [Insertion Sort Advanced Analysis](https://www.hackerrank.com/challenges/insertion-sort)
 - [ ] 14 [Fraudulent Activity Notifications](https://www.hackerrank.com/challenges/fraudulent-activity-notifications)
 - [ ] 15 [Lily's Homework](https://www.hackerrank.com/challenges/lilys-homework)
-#### Search
+#### Search (0/26)
 - [ ] 1 [Hackerland Radio Transmitters](https://www.hackerrank.com/challenges/hackerland-radio-transmitters)
 - [ ] 2 [Gridland Metro](https://www.hackerrank.com/challenges/gridland-metro)
 - [ ] 3 [Ice Cream Parlor](https://www.hackerrank.com/challenges/icecream-parlor)
@@ -158,7 +158,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 24 [Sorted Subsegments](https://www.hackerrank.com/challenges/sorted-subsegments)
 - [ ] 25 [Distant Pairs](https://www.hackerrank.com/challenges/distant-pairs)
 - [ ] 26 [King Richard's Knights](https://www.hackerrank.com/challenges/king-richards-knights)
-#### Graph Theory
+#### Graph Theory (0/50)
 - [ ] 1 [Frog in Maze](https://www.hackerrank.com/challenges/frog-in-maze)
 - [ ] 2 [Roads and Libraries](https://www.hackerrank.com/challenges/torque-and-development)
 - [ ] 3 [Journey to the Moon](https://www.hackerrank.com/challenges/journey-to-the-moon)
@@ -209,7 +209,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 48 [HackerX](https://www.hackerrank.com/challenges/missile-defend)
 - [ ] 49 [Huarongdao](https://www.hackerrank.com/challenges/huarongdao)
 - [ ] 50 [Training the army](https://www.hackerrank.com/challenges/training-the-army)
-#### Greedy
+#### Greedy (0/24)
 - [ ] 1 [Minimum Absolute Difference in an Array](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array)
 - [ ] 2 [Marc's Cakewalk](https://www.hackerrank.com/challenges/marcs-cakewalk)
 - [ ] 3 [Grid Challenge](https://www.hackerrank.com/challenges/grid-challenge)
@@ -234,7 +234,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 22 [Accessory Collection](https://www.hackerrank.com/challenges/accessory-collection)
 - [ ] 23 [Team Formation](https://www.hackerrank.com/challenges/team-formation)
 - [ ] 24 [Fighting Pits](https://www.hackerrank.com/challenges/fighting-pits)
-#### Dynamic Programming
+#### Dynamic Programming (0/50)
 - [ ] 1 [The Coin Change Problem](https://www.hackerrank.com/challenges/coin-change)
 - [ ] 2 [Equal](https://www.hackerrank.com/challenges/equal)
 - [ ] 3 [Sherlock and Cost](https://www.hackerrank.com/challenges/sherlock-and-cost)
@@ -285,7 +285,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 48 [Superman Celebrates Diwali ](https://www.hackerrank.com/challenges/superman-celebrates-diwali)
 - [ ] 49 [Hexagonal Grid](https://www.hackerrank.com/challenges/hexagonal-grid)
 - [ ] 50 [Queens on Board](https://www.hackerrank.com/challenges/queens-on-board)
-#### Constructive Algorithms
+#### Constructive Algorithms (0/11)
 - [ ] 1 [Lena Sort](https://www.hackerrank.com/challenges/lena-sort)
 - [ ] 2 [Flipping the Matrix](https://www.hackerrank.com/challenges/flipping-the-matrix)
 - [ ] 3 [Gaming Array](https://www.hackerrank.com/challenges/an-interesting-game-1)
@@ -297,7 +297,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 9 [Two Subarrays](https://www.hackerrank.com/challenges/two-subarrays)
 - [ ] 10 [Lovely Triplets](https://www.hackerrank.com/challenges/lovely-triplets)
 - [ ] 11 [Array Construction](https://www.hackerrank.com/challenges/array-construction)
-#### Bit Manipulation
+#### Bit Manipulation (6/27)
 - [x] 1 [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer)
 - [x] 2 [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor)
 - [x] 3 [Counter game](https://www.hackerrank.com/challenges/counter-game)
@@ -325,7 +325,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 25 [Iterate It](https://www.hackerrank.com/challenges/iterate-it)
 - [ ] 26 [Hamming Distance](https://www.hackerrank.com/challenges/hamming-distance)
 - [ ] 27 [Mixing proteins](https://www.hackerrank.com/challenges/pmix)
-#### Recursion
+#### Recursion (0/11)
 - [ ] 1 [The Power Sum](https://www.hackerrank.com/challenges/the-power-sum)
 - [ ] 2 [Crossword Puzzle](https://www.hackerrank.com/challenges/crossword-puzzle)
 - [ ] 3 [Recursive Digit Sum](https://www.hackerrank.com/challenges/recursive-digit-sum)
@@ -337,7 +337,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 9 [Bowling Pins](https://www.hackerrank.com/challenges/bowling-pins)
 - [ ] 10 [Simplified Chess Engine II](https://www.hackerrank.com/challenges/simplified-chess-engine-ii)
 - [ ] 11 [Repetitive K-Sums](https://www.hackerrank.com/challenges/repeat-k-sums)
-#### Game Theory
+#### Game Theory (0/32)
 - [ ] 1 [Game of Stones](https://www.hackerrank.com/challenges/game-of-stones-1)
 - [ ] 2 [Tower Breakers ](https://www.hackerrank.com/challenges/tower-breakers-1)
 - [ ] 3 [A Chessboard Game](https://www.hackerrank.com/challenges/a-chessboard-game-1)
@@ -370,26 +370,26 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 30 [Vertical Rooks](https://www.hackerrank.com/challenges/vertical-rooks)
 - [ ] 31 [A stones game](https://www.hackerrank.com/challenges/half)
 - [ ] 32 [Tastes Like Winning](https://www.hackerrank.com/challenges/taste-of-win)
-#### NP Complete
+#### NP Complete (0/4)
 - [ ] 1 [Walking the Approximate Longest Path](https://www.hackerrank.com/challenges/walking-the-approximate-longest-path)
 - [ ] 2 [Sam's Puzzle (Approximate)](https://www.hackerrank.com/challenges/sams-puzzle)
 - [ ] 3 [Spies, Revised](https://www.hackerrank.com/challenges/spies-revised)
 - [ ] 4 [TBS Problem](https://www.hackerrank.com/challenges/tbsp)
-#### Debugging
+#### Debugging (4/5)
 - [x] 1 [Prime Dates](https://www.hackerrank.com/challenges/prime-date)
 - [ ] 2 [Minimum Operations](https://www.hackerrank.com/challenges/minimum-operations)
 - [x] 3 [XOR Strings](https://www.hackerrank.com/challenges/strings-xor)
 - [x] 4 [Zig Zag Sequence](https://www.hackerrank.com/challenges/zig-zag-sequence)
 - [x] 5 [Smart Number](https://www.hackerrank.com/challenges/smart-number)
 ### Data Structures
-#### Arrays
+#### Arrays (3/6)
 - [x] 1 [Arrays - DS](https://www.hackerrank.com/challenges/arrays-ds)
 - [ ] 2 [2D Array - DS](https://www.hackerrank.com/challenges/2d-array)
 - [ ] 3 [Dynamic Array](https://www.hackerrank.com/challenges/dynamic-array)
 - [x] 4 [Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation)
 - [x] 5 [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays)
 - [ ] 6 [Array Manipulation](https://www.hackerrank.com/challenges/crush)
-#### Linked Lists
+#### Linked Lists (2/15)
 - [x] 1 [Print the Elements of a Linked List](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list)
 - [x] 2 [Insert a Node at the Tail of a Linked List](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list)
 - [ ] 3 [Insert a node at the head of a linked list](https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list)
@@ -405,7 +405,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 13 [Find Merge Point of Two Lists](https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists)
 - [ ] 14 [Inserting a Node Into a Sorted Doubly Linked List](https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list)
 - [ ] 15 [Reverse a doubly linked list](https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list)
-#### Trees
+#### Trees (5/17)
 - [x] 1 [Tree: Preorder Traversal](https://www.hackerrank.com/challenges/tree-preorder-traversal)
 - [x] 2 [Tree: Postorder Traversal](https://www.hackerrank.com/challenges/tree-postorder-traversal)
 - [x] 3 [Tree: Inorder Traversal](https://www.hackerrank.com/challenges/tree-inorder-traversal)
@@ -423,11 +423,11 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 15 [Jenny's Subtrees](https://www.hackerrank.com/challenges/jenny-subtrees)
 - [ ] 16 [Tree Coordinates](https://www.hackerrank.com/challenges/tree-coordinates)
 - [ ] 17 [Array Pairs](https://www.hackerrank.com/challenges/array-pairs)
-#### Balanced Trees
+#### Balanced Trees (0/3)
 - [ ] 1 [Self Balancing Tree](https://www.hackerrank.com/challenges/self-balancing-tree)
 - [ ] 2 [Array and simple queries](https://www.hackerrank.com/challenges/array-and-simple-queries)
 - [ ] 3 [Median Updates](https://www.hackerrank.com/challenges/median)
-#### Stacks
+#### Stacks (2/9)
 - [x] 1 [Maximum Element](https://www.hackerrank.com/challenges/maximum-element)
 - [x] 2 [Balanced Brackets](https://www.hackerrank.com/challenges/balanced-brackets)
 - [ ] 3 [Equal Stacks](https://www.hackerrank.com/challenges/equal-stacks)
@@ -437,30 +437,30 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 7 [Poisonous Plants](https://www.hackerrank.com/challenges/poisonous-plants)
 - [ ] 8 [AND xor OR](https://www.hackerrank.com/challenges/and-xor-or)
 - [ ] 9 [Waiter](https://www.hackerrank.com/challenges/waiter)
-#### Queues
+#### Queues (0/5)
 - [ ] 1 [Queue using Two Stacks](https://www.hackerrank.com/challenges/queue-using-two-stacks)
 - [ ] 2 [Castle on the Grid](https://www.hackerrank.com/challenges/castle-on-the-grid)
 - [ ] 3 [Down to Zero II](https://www.hackerrank.com/challenges/down-to-zero-ii)
 - [ ] 4 [Truck Tour](https://www.hackerrank.com/challenges/truck-tour)
 - [ ] 5 [Queries with Fixed Length](https://www.hackerrank.com/challenges/queries-with-fixed-length)
-#### Heap
+#### Heap (0/4)
 - [ ] 1 [QHEAP1](https://www.hackerrank.com/challenges/qheap1)
 - [ ] 2 [Jesse and Cookies](https://www.hackerrank.com/challenges/jesse-and-cookies)
 - [ ] 3 [Find the Running Median](https://www.hackerrank.com/challenges/find-the-running-median)
 - [ ] 4 [Minimum Average Waiting Time](https://www.hackerrank.com/challenges/minimum-average-waiting-time)
-#### Disjoint Set
+#### Disjoint Set (0/4)
 - [ ] 1 [Merging Communities ](https://www.hackerrank.com/challenges/merging-communities)
 - [ ] 2 [Components in a graph](https://www.hackerrank.com/challenges/components-in-graph)
 - [ ] 3 [Kundu and Tree](https://www.hackerrank.com/challenges/kundu-and-tree)
 - [ ] 4 [Super Maximum Cost Queries](https://www.hackerrank.com/challenges/maximum-cost-queries)
-#### Multiple Choice
+#### Multiple Choice (3/3)
 - [x] 1 [ Data Structures MCQ 1](https://www.hackerrank.com/challenges/how-well-do-you-know-trees)
 - [x] 2 [ Data Structures MCQ 2](https://www.hackerrank.com/challenges/are-you-an-expert-on-data-structures)
 - [x] 3 [ Data Structures MCQ 3](https://www.hackerrank.com/challenges/are-you-an-expert-on-data-structures-1)
-#### Trie
+#### Trie (0/2)
 - [ ] 1 [Contacts](https://www.hackerrank.com/challenges/contacts)
 - [ ] 2 [No Prefix Set](https://www.hackerrank.com/challenges/no-prefix-set)
-#### Advanced
+#### Advanced (1/50)
 - [ ] 1 [Kindergarten Adventures](https://www.hackerrank.com/challenges/kindergarten-adventures)
 - [x] 2 [Cube Summation](https://www.hackerrank.com/challenges/cube-summation)
 - [ ] 3 [Mr. X and His Shots](https://www.hackerrank.com/challenges/x-and-his-shots)
