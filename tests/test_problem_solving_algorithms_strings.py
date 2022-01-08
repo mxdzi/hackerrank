@@ -58,6 +58,26 @@ def test_q11_funny_string():
     assert q11_funny_string.funnyString("ivvkx") == "Not Funny"
 
 
+def test_q18_anagram():
+    assert q18_anagram.anagram("aaabbb") == 3
+    assert q18_anagram.anagram("ab") == 1
+    assert q18_anagram.anagram("abc") == -1
+    assert q18_anagram.anagram("mnop") == 2
+    assert q18_anagram.anagram("xyyx") == 0
+    assert q18_anagram.anagram("xaxbbbxx") == 1
+    assert q18_anagram.anagram("asdfjoieufoa") == 3
+    assert q18_anagram.anagram("fdhlvosfpafhalll") == 5
+    assert q18_anagram.anagram("mvdalvkiopaufl") == 5
+
+    with open("tests/tests_data/q18_anagram_input10.txt") as input_file, \
+            open("tests/tests_data/q18_anagram_output10.txt") as output_file:
+
+        test_cases = int(input_file.readline())
+        for _ in range(test_cases):
+            _in, _out = input_file.readline().rstrip(), output_file.readline().rstrip()
+            assert q18_anagram.anagram(_in) == int(_out)
+
+
 def test_q21_two_strings(capsys, monkeypatch):
     inputs = ["2",
               "hello",
