@@ -17,3 +17,25 @@ def test_q1_collections_counter(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "200\n"
     assert captured.out == output
+
+
+def test_q2_defaultdict_tutorial(capsys, monkeypatch):
+    inputs = ["5 2",
+              "a", "a", "b", "a", "b",
+              "a", "b"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_defaultdict_tutorial.main()
+    captured = capsys.readouterr()
+    output = "1 2 4\n3 5\n"
+    assert captured.out == output
+
+    inputs = ["1 1",
+              "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcbaxxxxxxxxxx",
+              "abcdefghijklmnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcbaxxxxxxxxx"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q2_defaultdict_tutorial.main()
+    captured = capsys.readouterr()
+    output = "-1\n"
+    assert captured.out == output
