@@ -121,3 +121,21 @@ def test_q6_py_collections_deque(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "1 2\n"
     assert captured.out == output
+
+
+def test_q7_most_commons(capsys, monkeypatch):
+    inputs = ["aabbbccde"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q7_most_commons.main()
+    captured = capsys.readouterr()
+    output = "b 3\na 2\nc 2\n"
+    assert captured.out == output
+
+    inputs = ["szrmtbttyyaymadobvwniwmozojggfbtswdiocewnqsjrkimhovimghixqryqgzhgbakpncwupcadwvglmupbexijimonxdowqsjinqzytkooacwkchatuwpsoxwvgrrejkukcvyzbkfnzfvrthmtfvmbppkdebswfpspxnelhqnjlgntqzsprmhcnuomrvuyolvzlni"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q7_most_commons.main()
+    captured = capsys.readouterr()
+    output = "o 12\nm 11\nn 11\n"
+    assert captured.out == output
