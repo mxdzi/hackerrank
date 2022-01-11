@@ -6,4 +6,5 @@ __all__ = [
     'q5_word_order',
     'q6_py_collections_deque',
     'q7_most_commons',
+    'q8_piling_up',
 ]

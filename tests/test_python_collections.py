@@ -139,3 +139,17 @@ def test_q7_most_commons(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "o 12\nm 11\nn 11\n"
     assert captured.out == output
+
+
+def test_q8_piling_up(capsys, monkeypatch):
+    inputs = ["2",
+              "6",
+              "4 3 2 1 3 4",
+              "3",
+              "1 3 2"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q8_piling_up.main()
+    captured = capsys.readouterr()
+    output = "Yes\nNo\n"
+    assert captured.out == output
