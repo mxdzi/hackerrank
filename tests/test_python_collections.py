@@ -91,3 +91,17 @@ def test_q4_py_collections_ordereddict(capsys, monkeypatch):
               "APPLE JUICE 20\n"
               "CANDY 20\n")
     assert captured.out == output
+
+
+def test_q5_word_order(capsys, monkeypatch):
+    inputs = ["4",
+              "bcdef",
+              "abcdefg",
+              "bcde",
+              "bcdef"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q5_word_order.main()
+    captured = capsys.readouterr()
+    output = ("3\n2 1 1\n")
+    assert captured.out == output
