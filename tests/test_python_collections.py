@@ -69,3 +69,25 @@ def test_q3_py_collections_namedtuple(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "81.00\n"
     assert captured.out == output
+
+
+def test_q4_py_collections_ordereddict(capsys, monkeypatch):
+    inputs = ["9",
+              "BANANA FRIES 12",
+              "POTATO CHIPS 30",
+              "APPLE JUICE 10",
+              "CANDY 5",
+              "APPLE JUICE 10",
+              "CANDY 5",
+              "CANDY 5",
+              "CANDY 5",
+              "POTATO CHIPS 30"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q4_py_collections_ordereddict.main()
+    captured = capsys.readouterr()
+    output = ("BANANA FRIES 12\n"
+              "POTATO CHIPS 60\n"
+              "APPLE JUICE 20\n"
+              "CANDY 20\n")
+    assert captured.out == output
