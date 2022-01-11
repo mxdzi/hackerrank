@@ -4,4 +4,5 @@ __all__ = [
     'q3_py_collections_namedtuple',
     'q4_py_collections_ordereddict',
     'q5_word_order',
+    'q6_py_collections_deque',
 ]

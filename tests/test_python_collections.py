@@ -105,3 +105,19 @@ def test_q5_word_order(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = ("3\n2 1 1\n")
     assert captured.out == output
+
+
+def test_q6_py_collections_deque(capsys, monkeypatch):
+    inputs = ["6",
+              "append 1",
+              "append 2",
+              "append 3",
+              "appendleft 4",
+              "pop",
+              "popleft"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q6_py_collections_deque.main()
+    captured = capsys.readouterr()
+    output = "1 2\n"
+    assert captured.out == output
