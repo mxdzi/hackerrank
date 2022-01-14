@@ -53,3 +53,16 @@ def test_q2_validate_list_of_email_address_with_filter(capsys, monkeypatch):
     captured = capsys.readouterr()
     output = "[]\n"
     assert captured.out == output
+
+
+def test_q3_reduce_function(capsys, monkeypatch):
+    inputs = ["3",
+              "1 2",
+              "3 4",
+              "10 6"]
+    monkeypatch.setattr('builtins.input', lambda: inputs.pop(0))
+
+    q3_reduce_function.main()
+    captured = capsys.readouterr()
+    output = "5 8\n"
+    assert captured.out == output
