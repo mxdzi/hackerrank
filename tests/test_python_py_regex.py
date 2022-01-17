@@ -48,3 +48,24 @@ def test_q2_re_split(capsys, monkeypatch, inputs, output):
     q2_re_split.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["..12345678910111213141516171820212223"],
+                "1\n",
+        ),
+        (
+                ["__commit__"],
+                "m\n",
+        ),
+    ],
+)
+def test_q3_re_group_groups(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q3_re_group_groups.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
