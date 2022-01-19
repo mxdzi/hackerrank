@@ -69,3 +69,28 @@ def test_q3_re_group_groups(capsys, monkeypatch, inputs, output):
     q3_re_group_groups.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["rabcdeefgyYhFjkIoomnpOeorteeeeet"],
+                "ee\nIoo\nOeo\neeeee\n",
+        ),
+        (
+                ["match a single character not present in the list below"],
+                "-1\n",
+        ),
+        (
+                ["abaabaabaabaae"],
+                "aa\naa\naa\n",
+        )
+    ],
+)
+def test_q4_re_findall_re_finditer(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q4_re_findall_re_finditer.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
