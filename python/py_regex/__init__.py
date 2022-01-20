@@ -3,4 +3,5 @@ __all__ = [
     'q2_re_split',
     'q3_re_group_groups',
     'q4_re_findall_re_finditer',
+    'q5_re_start_re_end',
 ]

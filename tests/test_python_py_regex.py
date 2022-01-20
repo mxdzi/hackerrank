@@ -94,3 +94,20 @@ def test_q4_re_findall_re_finditer(capsys, monkeypatch, inputs, output):
     q4_re_findall_re_finditer.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["aaadaa","aa"],
+                "(0, 1)\n(1, 2)\n(4, 5)\n",
+        ),
+    ],
+)
+def test_q5_re_start_re_end(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q5_re_start_re_end.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
