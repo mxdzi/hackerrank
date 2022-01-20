@@ -100,7 +100,7 @@ def test_q4_re_findall_re_finditer(capsys, monkeypatch, inputs, output):
     "inputs, output",
     [
         (
-                ["aaadaa","aa"],
+                ["aaadaa", "aa"],
                 "(0, 1)\n(1, 2)\n(4, 5)\n",
         ),
     ],
@@ -109,5 +109,67 @@ def test_q5_re_start_re_end(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
 
     q5_re_start_re_end.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["11",
+                 "a = 1;",
+                 "b = input();",
+                 "",
+                 "if a + b > 0 && a - b < 0:",
+                 "    start()",
+                 "elif a*b > 10 || a/b < 1:",
+                 "    stop()",
+                 "print set(list(a)) | set(list(b))",
+                 "#Note do not change &&& or ||| or & or |",
+                 "#Only change those '&&' which have space on both sides.",
+                 "#Only change those '|| which have space on both sides."],
+                ("a = 1;\n"
+                 "b = input();\n"
+                 "\n"
+                 "if a + b > 0 and a - b < 0:\n"
+                 "    start()\n"
+                 "elif a*b > 10 or a/b < 1:\n"
+                 "    stop()\n"
+                 "print set(list(a)) | set(list(b))\n"
+                 "#Note do not change &&& or ||| or & or |\n"
+                 "#Only change those '&&' which have space on both sides.\n"
+                 "#Only change those '|| which have space on both sides.\n"),
+        ),
+        (
+                ["1",
+                 r"x&& &&& && && x || | ||\|| x"],
+                 r"x&& &&& and and x or | ||\|| x" + "\n"
+        )
+    ],
+)
+def test_q6_re_sub_regex_substitution(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q6_re_sub_regex_substitution.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["CDXXI"], "True\n"
+        ),
+        (
+                ["DXXVIIII"], "False\n"
+        )
+    ],
+)
+def test_q7_validate_a_roman_number(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q7_validate_a_roman_number.main()
     captured = capsys.readouterr()
     assert captured.out == output
