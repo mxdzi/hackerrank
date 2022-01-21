@@ -197,3 +197,45 @@ def test_q8_validating_the_phone_number(capsys, monkeypatch, inputs, output):
     q8_validating_the_phone_number.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["2",
+                 "DEXTER <dexter@hotmail.com>",
+                 "VIRUS <virus!@variable.:p>"], "DEXTER <dexter@hotmail.com>\n"
+        ),
+        (
+                ["7",
+                 "dheeraj <dheeraj-234@gmail.com>",
+                 "crap <itsallcrap>",
+                 "harsh <harsh_1234@rediff.in>",
+                 "kumal <kunal_shin@iop.az>",
+                 "mattp <matt23@@india.in>",
+                 "harsh <.harsh_1234@rediff.in>",
+                 "harsh <-harsh_1234@rediff.in>"],
+                ("dheeraj <dheeraj-234@gmail.com>\n"
+                 "harsh <harsh_1234@rediff.in>\n"
+                 "kumal <kunal_shin@iop.az>\n")
+        ),
+        (
+                ["4",
+                 "this <is@valid.com>",
+                 "this <is_som@radom.stuff>",
+                 "this <is_it@valid.com>",
+                 "this <_is@notvalid.com>"],
+                ("this <is@valid.com>\n"
+                 "this <is_it@valid.com>\n")
+        )
+
+    ],
+)
+def test_q9_validating_named_email_addresses(capsys, monkeypatch, inputs,
+                                             output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q9_validating_named_email_addresses.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
