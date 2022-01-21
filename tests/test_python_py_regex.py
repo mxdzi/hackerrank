@@ -144,7 +144,7 @@ def test_q5_re_start_re_end(capsys, monkeypatch, inputs, output):
         (
                 ["1",
                  r"x&& &&& && && x || | ||\|| x"],
-                 r"x&& &&& and and x or | ||\|| x" + "\n"
+                r"x&& &&& and and x or | ||\|| x" + "\n"
         )
     ],
 )
@@ -171,5 +171,29 @@ def test_q7_validate_a_roman_number(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
 
     q7_validate_a_roman_number.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["2",
+                 "9587456281",
+                 "1252478965"], "YES\nNO\n"
+        ),
+        (
+                ["3",
+                 "8F54698745",
+                 "9898959398",
+                 "879546242"], "NO\nYES\nNO\n"
+        )
+    ],
+)
+def test_q8_validating_the_phone_number(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q8_validating_the_phone_number.main()
     captured = capsys.readouterr()
     assert captured.out == output

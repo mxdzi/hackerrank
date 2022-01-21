@@ -6,4 +6,5 @@ __all__ = [
     'q5_re_start_re_end',
     'q6_re_sub_regex_substitution',
     'q7_validate_a_roman_number',
+    'q8_validating_the_phone_number',
 ]
