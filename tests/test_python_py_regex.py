@@ -274,3 +274,35 @@ def test_q10_hex_color_code(capsys, monkeypatch, inputs, output):
     q10_hex_color_code.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["2",
+                 "<html><head><title>HTML Parser - I</title></head>",
+                 "<body data-modal-target class='1'><h1>HackerRank</h1><br /></body></html>"
+                 ],
+                ("Start : html\n"
+                 "Start : head\n"
+                 "Start : title\n"
+                 "End   : title\n"
+                 "End   : head\n"
+                 "Start : body\n"
+                 "-> data-modal-target > None\n"
+                 "-> class > 1\n"
+                 "Start : h1\n"
+                 "End   : h1\n"
+                 "Empty : br\n"
+                 "End   : body\n"
+                 "End   : html\n")
+        ),
+    ],
+)
+def test_q11_html_parser_part_1(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q11_html_parser_part_1.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
