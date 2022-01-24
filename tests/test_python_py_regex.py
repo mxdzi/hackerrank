@@ -306,3 +306,31 @@ def test_q11_html_parser_part_1(capsys, monkeypatch, inputs, output):
     q11_html_parser_part_1.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["4",
+                 "<!--[if IE 9]>IE9-specific content",
+                 "<![endif]-->",
+                 "<div> Welcome to HackerRank</div>",
+                 "<!--[if IE 9]>IE9-specific content<![endif]-->"
+                 ],
+                (">>> Multi-line Comment\n"
+                 "[if IE 9]>IE9-specific content\n"
+                 "<![endif]\n"
+                 ">>> Data\n"
+                 " Welcome to HackerRank\n"
+                 ">>> Single-line Comment\n"
+                 "[if IE 9]>IE9-specific content<![endif]\n")
+        ),
+    ],
+)
+def test_q12_html_parser_part_2(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q12_html_parser_part_2.main()
+    captured = capsys.readouterr()
+    assert captured.out == output

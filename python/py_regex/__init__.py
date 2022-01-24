@@ -10,4 +10,5 @@ __all__ = [
     'q9_validating_named_email_addresses',
     'q10_hex_color_code',
     'q11_html_parser_part_1',
+    'q12_html_parser_part_2',
 ]
