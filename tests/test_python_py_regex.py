@@ -334,3 +334,41 @@ def test_q12_html_parser_part_2(capsys, monkeypatch, inputs, output):
     q12_html_parser_part_2.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["9",
+                 '<head>\n',
+                 '<title>HTML</title>\n',
+                 '</head>\n',
+                 '<object type="application/x-flash" \n',
+                 '  data="your-file.swf" \n',
+                 '  width="0" height="0">\n',
+                 '  <!-- <param name="movie" value="your-file.swf" /> -->\n',
+                 '  <param name="quality" value="high"/>\n',
+                 '</object>\n'
+                 ],
+                ("head\n"
+                 "title\n"
+                 "object\n"
+                 "-> type > application/x-flash\n"
+                 "-> data > your-file.swf\n"
+                 "-> width > 0\n"
+                 "-> height > 0\n"
+                 "param\n"
+                 "-> name > quality\n"
+                 "-> value > high\n")
+        ),
+    ],
+)
+def test_q13_detect_html_tags_attributes_and_attribute_values(capsys,
+                                                              monkeypatch,
+                                                              inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q13_detect_html_tags_attributes_and_attribute_values.main()
+    captured = capsys.readouterr()
+    assert captured.out == output

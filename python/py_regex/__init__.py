@@ -11,4 +11,5 @@ __all__ = [
     'q10_hex_color_code',
     'q11_html_parser_part_1',
     'q12_html_parser_part_2',
+    'q13_detect_html_tags_attributes_and_attribute_values',
 ]
