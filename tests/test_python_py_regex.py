@@ -239,3 +239,38 @@ def test_q9_validating_named_email_addresses(capsys, monkeypatch, inputs,
     q9_validating_named_email_addresses.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                [11,
+                 "#BED",
+                 "{",
+                 "    color: #FfFdF8; background-color:#aef;",
+                 "11",
+                 "    font-size: 123px;",
+                 "    background: -webkit-linear-gradient(top, #f9f9f9, #fff);",
+                 "}",
+                 "#Cab",
+                 "{",
+                 "    background-color: #ABC;",
+                 "    border: 2px dashed #fff;",
+                 "}"
+                 ],
+                ("#FfFdF8\n"
+                 "#aef\n"
+                 "#f9f9f9\n"
+                 "#fff\n"
+                 "#ABC\n"
+                 "#fff\n")
+        ),
+    ],
+)
+def test_q10_hex_color_code(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q10_hex_color_code.main()
+    captured = capsys.readouterr()
+    assert captured.out == output

@@ -8,4 +8,5 @@ __all__ = [
     'q7_validate_a_roman_number',
     'q8_validating_the_phone_number',
     'q9_validating_named_email_addresses',
+    'q10_hex_color_code',
 ]
