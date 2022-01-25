@@ -372,3 +372,23 @@ def test_q13_detect_html_tags_attributes_and_attribute_values(capsys,
     q13_detect_html_tags_attributes_and_attribute_values.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["2",
+                 "B1CD102354",
+                 "B1CDEF2354"],
+                ("Invalid\n"
+                 "Valid\n")
+        ),
+    ],
+)
+def test_q14_validating_uid(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q14_validating_uid.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
