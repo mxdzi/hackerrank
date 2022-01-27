@@ -392,3 +392,31 @@ def test_q14_validating_uid(capsys, monkeypatch, inputs, output):
     q14_validating_uid.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["6",
+                 "4123456789123456",
+                 "5123-4567-8912-3456",
+                 "61234-567-8912-3456",
+                 "4123356789123456",
+                 "5133-3367-8912-3456",
+                 "5123 - 3567 - 8912 - 3456"],
+                ("Valid\n"
+                 "Valid\n"
+                 "Invalid\n"
+                 "Valid\n"
+                 "Invalid\n"
+                 "Invalid\n")
+        ),
+    ],
+)
+def test_q15_validating_credit_card_number(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q15_validating_credit_card_number.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
