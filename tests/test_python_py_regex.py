@@ -420,3 +420,29 @@ def test_q15_validating_credit_card_number(capsys, monkeypatch, inputs, output):
     q15_validating_credit_card_number.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["110000"], "False\n"
+        ),
+        (
+                ["111456"], "True\n"
+        ),
+        (
+                ["101201"], "True\n"
+        ),
+        (
+                ["4542867"], "False\n"
+        ),
+    ],
+    ids=['Test case 0', 'Test case 1', 'Test case 3', 'Test case 5']
+)
+def test_q16_validating_postalcode(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q16_validating_postalcode.main()
+    captured = capsys.readouterr()
+    assert captured.out == output

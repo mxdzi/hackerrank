@@ -14,4 +14,5 @@ __all__ = [
     'q13_detect_html_tags_attributes_and_attribute_values',
     'q14_validating_uid',
     'q15_validating_credit_card_number',
+    'q16_validating_postalcode',
 ]
