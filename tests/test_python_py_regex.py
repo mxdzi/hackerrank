@@ -24,6 +24,7 @@ from python.py_regex import *
                 "True\nTrue\nFalse\nFalse\nFalse\n",
         ),
     ],
+    ids=['Test case 0', 'Test case 1']
 )
 def test_q1_introduction_to_regex(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -41,6 +42,7 @@ def test_q1_introduction_to_regex(capsys, monkeypatch, inputs, output):
                 "100\n000\n000\n000\n",
         ),
     ],
+    ids=['Test case 0']
 )
 def test_q2_re_split(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -62,6 +64,7 @@ def test_q2_re_split(capsys, monkeypatch, inputs, output):
                 "m\n",
         ),
     ],
+    ids=['Test case 0', 'Test case 1']
 )
 def test_q3_re_group_groups(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -87,6 +90,7 @@ def test_q3_re_group_groups(capsys, monkeypatch, inputs, output):
                 "aa\naa\naa\n",
         )
     ],
+    ids=['Test case 0', 'Test case 2', 'Test case 3']
 )
 def test_q4_re_findall_re_finditer(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -104,6 +108,7 @@ def test_q4_re_findall_re_finditer(capsys, monkeypatch, inputs, output):
                 "(0, 1)\n(1, 2)\n(4, 5)\n",
         ),
     ],
+    ids=['Test case 0']
 )
 def test_q5_re_start_re_end(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -147,6 +152,7 @@ def test_q5_re_start_re_end(capsys, monkeypatch, inputs, output):
                 r"x&& &&& and and x or | ||\|| x" + "\n"
         )
     ],
+    ids=['Test case 0', 'Test case 6']
 )
 def test_q6_re_sub_regex_substitution(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -166,6 +172,7 @@ def test_q6_re_sub_regex_substitution(capsys, monkeypatch, inputs, output):
                 ["DXXVIIII"], "False\n"
         )
     ],
+    ids=['Test case 0', 'Test case 1']
 )
 def test_q7_validate_a_roman_number(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -190,6 +197,7 @@ def test_q7_validate_a_roman_number(capsys, monkeypatch, inputs, output):
                  "879546242"], "NO\nYES\nNO\n"
         )
     ],
+    ids=['Test case 0', 'Test case 1']
 )
 def test_q8_validating_the_phone_number(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -231,6 +239,7 @@ def test_q8_validating_the_phone_number(capsys, monkeypatch, inputs, output):
         )
 
     ],
+    ids=['Test case 0', 'Test case 1', 'Test case 3']
 )
 def test_q9_validating_named_email_addresses(capsys, monkeypatch, inputs,
                                              output):
@@ -267,6 +276,7 @@ def test_q9_validating_named_email_addresses(capsys, monkeypatch, inputs,
                  "#fff\n")
         ),
     ],
+    ids=['Test case 0']
 )
 def test_q10_hex_color_code(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -299,6 +309,7 @@ def test_q10_hex_color_code(capsys, monkeypatch, inputs, output):
                  "End   : html\n")
         ),
     ],
+    ids=['Test case 0']
 )
 def test_q11_html_parser_part_1(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -327,6 +338,7 @@ def test_q11_html_parser_part_1(capsys, monkeypatch, inputs, output):
                  "[if IE 9]>IE9-specific content<![endif]\n")
         ),
     ],
+    ids=['Test case 0']
 )
 def test_q12_html_parser_part_2(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -363,6 +375,7 @@ def test_q12_html_parser_part_2(capsys, monkeypatch, inputs, output):
                  "-> value > high\n")
         ),
     ],
+    ids=['Test case 0']
 )
 def test_q13_detect_html_tags_attributes_and_attribute_values(capsys,
                                                               monkeypatch,
@@ -385,6 +398,7 @@ def test_q13_detect_html_tags_attributes_and_attribute_values(capsys,
                  "Valid\n")
         ),
     ],
+    ids=['Test case 0']
 )
 def test_q14_validating_uid(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
@@ -413,6 +427,7 @@ def test_q14_validating_uid(capsys, monkeypatch, inputs, output):
                  "Invalid\n")
         ),
     ],
+    ids=['Test case 0']
 )
 def test_q15_validating_credit_card_number(capsys, monkeypatch, inputs, output):
     monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
