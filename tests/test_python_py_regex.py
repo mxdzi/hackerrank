@@ -446,3 +446,25 @@ def test_q16_validating_postalcode(capsys, monkeypatch, inputs, output):
     q16_validating_postalcode.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["7 3", "Tsi", "h%x", "i #", "sM ", "$a ", "#t%", "ir!"],
+                "This is Matrix#  %!\n"
+        ),
+        (
+                ["4 6", "T%Mic&", "h%axr%", "iit#p!", "ssrst&"],
+                "This isMatrix scrpt&%!&\n"
+        ),
+    ],
+    ids=['Test case 0', 'Test case 1']
+)
+def test_q17_matrix_script(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q17_matrix_script.main()
+    captured = capsys.readouterr()
+    assert captured.out == output

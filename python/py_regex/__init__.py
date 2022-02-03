@@ -15,4 +15,5 @@ __all__ = [
     'q14_validating_uid',
     'q15_validating_credit_card_number',
     'q16_validating_postalcode',
+    'q17_matrix_script',
 ]
