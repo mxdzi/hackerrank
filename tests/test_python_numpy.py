@@ -39,3 +39,23 @@ def test_q2_np_shape_reshape(capsys, monkeypatch, inputs, output):
     q2_np_shape_reshape.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["2 2", "1 2", "3 4"],
+                ("[[1 3]\n"
+                 " [2 4]]\n"
+                 "[1 2 3 4]\n"),
+        ),
+    ],
+    ids=['Test case 0']
+)
+def test_q3_np_transpose_and_flatten(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q3_np_transpose_and_flatten.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
