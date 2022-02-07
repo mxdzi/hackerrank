@@ -83,3 +83,63 @@ def test_q4_np_concatenate(capsys, monkeypatch, inputs, output):
     q4_np_concatenate.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["3 3 3"],
+                ("[[[0 0 0]\n"
+                 "  [0 0 0]\n"
+                 "  [0 0 0]]\n"
+                 "\n"
+                 " [[0 0 0]\n"
+                 "  [0 0 0]\n"
+                 "  [0 0 0]]\n"
+                 "\n"
+                 " [[0 0 0]\n"
+                 "  [0 0 0]\n"
+                 "  [0 0 0]]]\n"
+                 "[[[1 1 1]\n"
+                 "  [1 1 1]\n"
+                 "  [1 1 1]]\n"
+                 "\n"
+                 " [[1 1 1]\n"
+                 "  [1 1 1]\n"
+                 "  [1 1 1]]\n"
+                 "\n"
+                 " [[1 1 1]\n"
+                 "  [1 1 1]\n"
+                 "  [1 1 1]]]\n"
+                 ),
+        ),
+        (
+                ["3 2 3"],
+                ("[[[0 0 0]\n"
+                 "  [0 0 0]]\n"
+                 "\n"
+                 " [[0 0 0]\n"
+                 "  [0 0 0]]\n"
+                 "\n"
+                 " [[0 0 0]\n"
+                 "  [0 0 0]]]\n"
+                 "[[[1 1 1]\n"
+                 "  [1 1 1]]\n"
+                 "\n"
+                 " [[1 1 1]\n"
+                 "  [1 1 1]]\n"
+                 "\n"
+                 " [[1 1 1]\n"
+                 "  [1 1 1]]]\n"
+                 ),
+        ),
+    ],
+    ids=['Test case 0', 'Test case 1']
+)
+def test_q5_np_zeros_and_ones(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q5_np_zeros_and_ones.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
