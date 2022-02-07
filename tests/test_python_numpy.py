@@ -59,3 +59,27 @@ def test_q3_np_transpose_and_flatten(capsys, monkeypatch, inputs, output):
     q3_np_transpose_and_flatten.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["4 3 2", "1 2", "1 2", "1 2", "1 2", "3 4", "3 4", "3 4"],
+                ("[[1 2]\n"
+                 " [1 2]\n"
+                 " [1 2]\n"
+                 " [1 2]\n"
+                 " [3 4]\n"
+                 " [3 4]\n"
+                 " [3 4]]\n"),
+        ),
+    ],
+    ids=['Test case 0']
+)
+def test_q4_np_concatenate(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q4_np_concatenate.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
