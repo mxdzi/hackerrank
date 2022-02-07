@@ -19,3 +19,23 @@ def test_q1_np_arrays(capsys, monkeypatch, inputs, output):
     q1_np_arrays.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["1 2 3 4 5 6 7 8 9"],
+                ("[[1 2 3]\n"
+                 " [4 5 6]\n"
+                 " [7 8 9]]\n"),
+        ),
+    ],
+    ids=['Test case 0']
+)
+def test_q2_np_shape_reshape(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q2_np_shape_reshape.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
