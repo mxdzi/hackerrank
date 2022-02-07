@@ -6,4 +6,5 @@ __all__ = [
     'q5_np_zeros_and_ones',
     'q6_np_eye_and_identity',
     'q7_np_array_mathematics',
+    'q8_floor_ceil_and_rint',
 ]
