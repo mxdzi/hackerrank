@@ -5,4 +5,5 @@ __all__ = [
     'q4_np_concatenate',
     'q5_np_zeros_and_ones',
     'q6_np_eye_and_identity',
+    'q7_np_array_mathematics',
 ]
