@@ -4,4 +4,5 @@ __all__ = [
     'q3_np_transpose_and_flatten',
     'q4_np_concatenate',
     'q5_np_zeros_and_ones',
+    'q6_np_eye_and_identity',
 ]

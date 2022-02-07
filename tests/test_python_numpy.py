@@ -143,3 +143,23 @@ def test_q5_np_zeros_and_ones(capsys, monkeypatch, inputs, output):
     q5_np_zeros_and_ones.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["3 3"],
+                ("[[1. 0. 0.]\n"
+                 " [0. 1. 0.]\n"
+                 " [0. 0. 1.]]\n"),
+        ),
+    ],
+    ids=['Test case 0']
+)
+def test_q6_np_eye_and_identity(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q6_np_eye_and_identity.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
