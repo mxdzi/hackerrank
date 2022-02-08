@@ -244,3 +244,29 @@ def test_q10_np_min_and_max(capsys, monkeypatch, inputs, output):
     q10_np_min_and_max.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["2 2", "1 2", "3 4"],
+                "[1.5 3.5]\n"
+                "[1. 1.]\n"
+                "1.11803398875\n"
+        ),
+        (
+                ["2 2", "1 2", "3 3"],
+                "[1.5 3. ]\n"
+                "[1.   0.25]\n"
+                "0.82915619759\n"
+        ),
+    ],
+    ids=['Test case 0', 'Test case 1']
+)
+def test_q11_np_mean_var_and_std(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q11_np_mean_var_and_std.main()
+    captured = capsys.readouterr()
+    assert captured.out == output

@@ -9,4 +9,5 @@ __all__ = [
     'q8_floor_ceil_and_rint',
     'q9_np_sum_and_prod',
     'q10_np_min_and_max',
+    'q11_np_mean_var_and_std',
 ]
