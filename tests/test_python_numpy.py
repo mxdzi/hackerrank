@@ -327,3 +327,25 @@ def test_q14_np_polynomials(capsys, monkeypatch, inputs, output):
     q14_np_polynomials.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["2", "1.1 1.1", "1.1 1.1"],
+                "0.0\n"
+        ),
+        (
+                ["2", "1.1 1.1", "1.1 1.2"],
+                "0.11\n"
+        ),
+    ],
+    ids=['Test case 0', 'Test case 1']
+)
+def test_q15_np_linear_algebra(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q15_np_linear_algebra.main()
+    captured = capsys.readouterr()
+    assert captured.out == output

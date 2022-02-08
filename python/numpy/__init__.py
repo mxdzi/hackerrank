@@ -13,4 +13,5 @@ __all__ = [
     'q12_np_dot_and_cross',
     'q13_np_inner_and_outer',
     'q14_np_polynomials',
+    'q15_np_linear_algebra',
 ]
