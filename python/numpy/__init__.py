@@ -11,4 +11,5 @@ __all__ = [
     'q10_np_min_and_max',
     'q11_np_mean_var_and_std',
     'q12_np_dot_and_cross',
+    'q13_np_inner_and_outer',
 ]

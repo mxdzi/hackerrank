@@ -289,3 +289,23 @@ def test_q12_np_dot_and_cross(capsys, monkeypatch, inputs, output):
     q12_np_dot_and_cross.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["0 1", "2 3"],
+                "3\n"
+                "[[0 0]\n"
+                " [2 3]]\n"
+        ),
+    ],
+    ids=['Test case 0']
+)
+def test_q13_np_inner_and_outer(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q13_np_inner_and_outer.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
