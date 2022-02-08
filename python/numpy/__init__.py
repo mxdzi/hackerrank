@@ -8,4 +8,5 @@ __all__ = [
     'q7_np_array_mathematics',
     'q8_floor_ceil_and_rint',
     'q9_np_sum_and_prod',
+    'q10_np_min_and_max',
 ]
