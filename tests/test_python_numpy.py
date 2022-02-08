@@ -208,3 +208,21 @@ def test_q8_floor_ceil_and_rint(capsys, monkeypatch, inputs, output):
     q8_floor_ceil_and_rint.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["2 2", "1 2", "3 4"],
+                "24\n"
+        ),
+    ],
+    ids=['Test case 0']
+)
+def test_q9_np_sum_and_prod(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q9_np_sum_and_prod.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
