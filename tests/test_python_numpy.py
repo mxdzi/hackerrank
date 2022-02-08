@@ -309,3 +309,21 @@ def test_q13_np_inner_and_outer(capsys, monkeypatch, inputs, output):
     q13_np_inner_and_outer.main()
     captured = capsys.readouterr()
     assert captured.out == output
+
+
+@pytest.mark.parametrize(
+    "inputs, output",
+    [
+        (
+                ["1.1 2 3", "0"],
+                "3.0\n"
+        ),
+    ],
+    ids=['Test case 0']
+)
+def test_q14_np_polynomials(capsys, monkeypatch, inputs, output):
+    monkeypatch.setattr("builtins.input", lambda: inputs.pop(0))
+
+    q14_np_polynomials.main()
+    captured = capsys.readouterr()
+    assert captured.out == output
