@@ -55,3 +55,15 @@ def test_q12_drawing_book():
 def test_q21_utopian_tree(inputs, outputs):
     for i, o in zip(inputs, outputs):
         assert o == q21_utopian_tree.utopianTree(i)
+
+
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        (25, "15511210043330985984000000\n"),
+        (45, "119622220865480194561963161495657715064383733760000000000\n")
+    ], ids=['Test case 0', 'Test case 12']
+)
+def test_q30_extra_long_factorials(inputs, outputs, capsys):
+    q30_extra_long_factorials.extraLongFactorials(inputs)
+    captured = capsys.readouterr()
+    assert captured.out == outputs
