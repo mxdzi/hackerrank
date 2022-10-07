@@ -67,3 +67,14 @@ def test_q30_extra_long_factorials(inputs, outputs, capsys):
     q30_extra_long_factorials.extraLongFactorials(inputs)
     captured = capsys.readouterr()
     assert captured.out == outputs
+
+
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        ([(10, 2, 5), (12, 4, 4), (6, 2, 2)], [6, 3 ,5]),
+        ([(7, 3, 2)], [3])
+    ], ids=['Test case 0', 'Test case 10']
+)
+def test_q50_chocolate_feast(inputs, outputs):
+    for i, o in zip(inputs, outputs):
+        assert o == q50_chocolate_feast.chocolateFeast(*i)

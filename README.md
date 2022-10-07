@@ -65,7 +65,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 47 [Minimum Distances](https://www.hackerrank.com/challenges/minimum-distances)
 - [ ] 48 [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale)
 - [ ] 49 [The Time in Words](https://www.hackerrank.com/challenges/the-time-in-words)
-- [ ] 50 [Chocolate Feast ](https://www.hackerrank.com/challenges/chocolate-feast)
+- [x] 50 [Chocolate Feast ](https://www.hackerrank.com/challenges/chocolate-feast)
 #### Strings (7/48)
 - [ ] 1 [Super Reduced String](https://www.hackerrank.com/challenges/reduced-string)
 - [x] 2 [CamelCase](https://www.hackerrank.com/challenges/camelcase)
