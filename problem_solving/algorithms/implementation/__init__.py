@@ -6,6 +6,7 @@ __all__ = [
     'q12_drawing_book',
     'q15_cats_and_a_mouse',
     'q21_utopian_tree',
+    'q24_strange_advertising',
     'q30_extra_long_factorials',
     'q50_chocolate_feast',
 ]

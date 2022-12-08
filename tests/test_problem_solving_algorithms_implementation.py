@@ -58,6 +58,19 @@ def test_q21_utopian_tree(inputs, outputs):
 
 
 @pytest.mark.parametrize(
+    "inputs, outputs",
+    [
+        (3, 9),
+        (4, 15),
+        (50, 2068789129),
+    ],
+    ids=['Test case 0', 'Test case 1', 'Test case 2']
+)
+def test_q24_strange_advertising(inputs, outputs):
+    assert outputs == q24_strange_advertising.viralAdvertising(inputs)
+
+
+@pytest.mark.parametrize(
     "inputs, outputs", [
         (25, "15511210043330985984000000\n"),
         (45, "119622220865480194561963161495657715064383733760000000000\n")
