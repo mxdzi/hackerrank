@@ -1,3 +1,5 @@
+import pytest
+
 from python.errors_and_exceptions import *
 
 
@@ -16,6 +18,7 @@ def test_q1_exceptions(capsys, monkeypatch):
     assert captured.out == output
 
 
+@pytest.mark.skip("Regex no longer invalid in Python 3.11")
 def test_q2_incorrect_regex(capsys, monkeypatch):
     inputs = ["2",
               ".*\+",
