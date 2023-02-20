@@ -8,5 +8,6 @@ __all__ = [
     'q21_utopian_tree',
     'q24_strange_advertising',
     'q30_extra_long_factorials',
+    'q36_repeated_string',
     'q50_chocolate_feast',
 ]

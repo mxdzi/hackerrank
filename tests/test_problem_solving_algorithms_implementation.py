@@ -84,6 +84,16 @@ def test_q30_extra_long_factorials(inputs, outputs, capsys):
 
 @pytest.mark.parametrize(
     "inputs, outputs", [
+        (["aba", 10], 7),
+        (["a", 1000000000000], 1000000000000)
+    ], ids=['Test case 0', 'Test case 1']
+)
+def test_q36_repeated_string(inputs, outputs):
+    assert q36_repeated_string.repeatedString(inputs[0], inputs[1]) == outputs
+
+
+@pytest.mark.parametrize(
+    "inputs, outputs", [
         ([(10, 2, 5), (12, 4, 4), (6, 2, 2)], [6, 3 ,5]),
         ([(7, 3, 2)], [3])
     ], ids=['Test case 0', 'Test case 10']
