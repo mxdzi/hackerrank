@@ -18,6 +18,17 @@ def test_q7_divisible_sum_pairs():
                                                          [1, 3, 2, 6, 1, 2])
 
 
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        ([1, 4, 4, 4, 5, 3], 4),
+        ([1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4], 3),
+    ],
+    ids=['Test case 0', 'Test case 5']
+)
+def test_q8_migratory_birds(inputs, outputs):
+    assert outputs == q8_migratory_birds.migratoryBirds(inputs)
+
+
 def test_q11_sock_merchant():
     assert q11_sock_merchant.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10,
                                               20]) == 3
@@ -94,7 +105,7 @@ def test_q36_repeated_string(inputs, outputs):
 
 @pytest.mark.parametrize(
     "inputs, outputs", [
-        ([(10, 2, 5), (12, 4, 4), (6, 2, 2)], [6, 3 ,5]),
+        ([(10, 2, 5), (12, 4, 4), (6, 2, 2)], [6, 3, 5]),
         ([(7, 3, 2)], [3])
     ], ids=['Test case 0', 'Test case 10']
 )

@@ -23,7 +23,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 5 [Breaking the Records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records)
 - [ ] 6 [Subarray Division](https://www.hackerrank.com/challenges/the-birthday-bar)
 - [x] 7 [Divisible Sum Pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs)
-- [ ] 8 [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds)
+- [x] 8 [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds)
 - [ ] 9 [Day of the Programmer](https://www.hackerrank.com/challenges/day-of-the-programmer)
 - [ ] 10 [Bill Division](https://www.hackerrank.com/challenges/bon-appetit)
 - [x] 11 [Sales by Match](https://www.hackerrank.com/challenges/sock-merchant)
