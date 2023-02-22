@@ -17,7 +17,7 @@ My solutions to https://www.hackerrank.com problems.
 - [x] 10 [Time Conversion](https://www.hackerrank.com/challenges/time-conversion)
 #### Implementation (10/50)
 - [x] 1 [Grading Students](https://www.hackerrank.com/challenges/grading)
-- [ ] 2 [Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange)
+- [x] 2 [Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange)
 - [x] 3 [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo)
 - [ ] 4 [Between Two Sets](https://www.hackerrank.com/challenges/between-two-sets)
 - [ ] 5 [Breaking the Records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records)

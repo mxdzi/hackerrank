@@ -8,6 +8,18 @@ def test_q1_grading_students():
         [73, 67, 38, 33])
 
 
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        ((7, 11, 5, 15, [-2, 2, 1], [5, -6]), "1\n1\n"),
+    ],
+    ids=['Test case 0']
+)
+def test_q2_apple_and_orange(inputs, outputs, capsys):
+    q2_apple_and_orange.countApplesAndOranges(*inputs)
+    captured = capsys.readouterr()
+    assert captured.out == outputs
+
+
 def test_q3_kangaroo():
     assert "YES" == q3_kangaroo.kangaroo(0, 3, 4, 2)
     assert "NO" == q3_kangaroo.kangaroo(0, 2, 5, 3)

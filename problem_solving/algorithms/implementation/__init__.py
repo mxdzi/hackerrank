@@ -1,5 +1,6 @@
 __all__ = [
     'q1_grading_students',
+    'q2_apple_and_orange',
     'q3_kangaroo',
     'q7_divisible_sum_pairs',
     'q8_migratory_birds',
