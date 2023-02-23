@@ -25,6 +25,17 @@ def test_q3_kangaroo():
     assert "NO" == q3_kangaroo.kangaroo(0, 2, 5, 3)
 
 
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        (([2, 4], [16, 32, 96]), 3),
+        (([3, 4], [24, 48]), 2),
+    ],
+    ids=['Test case 0', 'Test case 1']
+)
+def test_q4_between_two_sets(inputs, outputs):
+    assert outputs == q4_between_two_sets.getTotalX(*inputs)
+
+
 def test_q7_divisible_sum_pairs():
     assert 5 == q7_divisible_sum_pairs.divisibleSumPairs(6, 3,
                                                          [1, 3, 2, 6, 1, 2])
