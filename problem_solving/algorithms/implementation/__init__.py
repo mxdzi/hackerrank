@@ -3,6 +3,7 @@ __all__ = [
     'q2_apple_and_orange',
     'q3_kangaroo',
     'q4_between_two_sets',
+    'q5_breaking_best_and_worst_records',
     'q7_divisible_sum_pairs',
     'q8_migratory_birds',
     'q11_sock_merchant',

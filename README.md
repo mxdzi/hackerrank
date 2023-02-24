@@ -20,7 +20,7 @@ My solutions to https://www.hackerrank.com problems.
 - [x] 2 [Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange)
 - [x] 3 [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo)
 - [x] 4 [Between Two Sets](https://www.hackerrank.com/challenges/between-two-sets)
-- [ ] 5 [Breaking the Records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records)
+- [x] 5 [Breaking the Records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records)
 - [ ] 6 [Subarray Division](https://www.hackerrank.com/challenges/the-birthday-bar)
 - [x] 7 [Divisible Sum Pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs)
 - [x] 8 [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds)

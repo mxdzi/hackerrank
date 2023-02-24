@@ -36,6 +36,17 @@ def test_q4_between_two_sets(inputs, outputs):
     assert outputs == q4_between_two_sets.getTotalX(*inputs)
 
 
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        ([10, 5, 20, 20, 4, 5, 2, 25, 1], [2, 4]),
+        ([3, 4, 21, 36, 10, 28, 35, 5, 24, 42], [4, 0]),
+    ],
+    ids=['Test case 0', 'Test case 1']
+)
+def test_q5_breaking_best_and_worst_records(inputs, outputs):
+    assert outputs == q5_breaking_best_and_worst_records.breakingRecords(inputs)
+
+
 def test_q7_divisible_sum_pairs():
     assert 5 == q7_divisible_sum_pairs.divisibleSumPairs(6, 3,
                                                          [1, 3, 2, 6, 1, 2])
