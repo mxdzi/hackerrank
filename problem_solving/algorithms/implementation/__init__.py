@@ -6,6 +6,7 @@ __all__ = [
     'q5_breaking_best_and_worst_records',
     'q7_divisible_sum_pairs',
     'q8_migratory_birds',
+    'q9_day_of_the_programmer',
     'q11_sock_merchant',
     'q12_drawing_book',
     'q15_cats_and_a_mouse',

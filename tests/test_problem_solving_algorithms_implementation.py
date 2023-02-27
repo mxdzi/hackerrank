@@ -63,6 +63,19 @@ def test_q8_migratory_birds(inputs, outputs):
     assert outputs == q8_migratory_birds.migratoryBirds(inputs)
 
 
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        (2017, '13.09.2017'),
+        (2016, '12.09.2016'),
+        (1800, '12.09.1800'),
+        (1918, '26.09.1918'),
+    ],
+    ids=['Test case 0', 'Test case 1', 'Test case 2', 'Test case 59']
+)
+def test_q9_day_of_the_programmer(inputs, outputs):
+    assert q9_day_of_the_programmer.dayOfProgrammer(inputs) == outputs
+
+
 def test_q11_sock_merchant():
     assert q11_sock_merchant.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10,
                                               20]) == 3
