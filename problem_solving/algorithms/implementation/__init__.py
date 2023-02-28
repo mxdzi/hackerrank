@@ -12,6 +12,7 @@ __all__ = [
     'q15_cats_and_a_mouse',
     'q21_utopian_tree',
     'q24_strange_advertising',
+    'q29_find_digits',
     'q30_extra_long_factorials',
     'q36_repeated_string',
     'q50_chocolate_feast',

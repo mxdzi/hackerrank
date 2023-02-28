@@ -44,7 +44,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 26 [Circular Array Rotation](https://www.hackerrank.com/challenges/circular-array-rotation)
 - [ ] 27 [Sequence Equation](https://www.hackerrank.com/challenges/permutation-equation)
 - [ ] 28 [Jumping on the Clouds: Revisited](https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited)
-- [ ] 29 [Find Digits](https://www.hackerrank.com/challenges/find-digits)
+- [x] 29 [Find Digits](https://www.hackerrank.com/challenges/find-digits)
 - [x] 30 [Extra Long Factorials](https://www.hackerrank.com/challenges/extra-long-factorials)
 - [ ] 31 [Append and Delete](https://www.hackerrank.com/challenges/append-and-delete)
 - [ ] 32 [Sherlock and Squares](https://www.hackerrank.com/challenges/sherlock-and-squares)

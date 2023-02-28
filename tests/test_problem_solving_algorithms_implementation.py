@@ -129,6 +129,19 @@ def test_q24_strange_advertising(inputs, outputs):
 
 
 @pytest.mark.parametrize(
+    "inputs, outputs",
+    [
+        ([12, 1012], [2, 3]),
+        ([123456789, 114108089, 110110015, 121, 33, 44, 55, 66, 77, 88, 106108048], [3, 3, 6, 2, 2, 2, 2, 2, 2, 2, 5]),
+    ],
+    ids=['Test case 0', 'Test case 1']
+)
+def test_q29_find_digits(inputs, outputs):
+    for i, o in zip(inputs, outputs):
+        assert q29_find_digits.findDigits(i) == o
+
+
+@pytest.mark.parametrize(
     "inputs, outputs", [
         (25, "15511210043330985984000000\n"),
         (45, "119622220865480194561963161495657715064383733760000000000\n")
