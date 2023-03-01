@@ -10,6 +10,7 @@ __all__ = [
     'q11_sock_merchant',
     'q12_drawing_book',
     'q15_cats_and_a_mouse',
+    'q20_designer_pdf_viewer',
     'q21_utopian_tree',
     'q24_strange_advertising',
     'q29_find_digits',

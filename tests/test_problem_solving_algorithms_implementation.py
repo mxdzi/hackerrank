@@ -83,6 +83,11 @@ def test_q11_sock_merchant():
                                           [1, 1, 3, 1, 2, 1, 3, 3, 3, 3]) == 4
 
 
+def test_q12_drawing_book():
+    assert 1 == q12_drawing_book.pageCount(6, 2)
+    assert 0 == q12_drawing_book.pageCount(5, 4)
+
+
 @pytest.mark.parametrize(
     "inputs, outputs", [
         ([(1, 2, 3), (1, 3, 2)], ["Cat B", "Mouse C"])
@@ -94,9 +99,15 @@ def test_q15_cats_and_a_mouse(inputs, outputs):
         assert o == q15_cats_and_a_mouse.catAndMouse(*i)
 
 
-def test_q12_drawing_book():
-    assert 1 == q12_drawing_book.pageCount(6, 2)
-    assert 0 == q12_drawing_book.pageCount(5, 4)
+@pytest.mark.parametrize(
+    "inputs, outputs",
+    [
+        ([[1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], 'abc'], 9),
+    ],
+    ids=['Test case 0']
+)
+def test_q20_designer_pdf_viewer(inputs, outputs):
+    assert q20_designer_pdf_viewer.designerPdfViewer(*inputs) == outputs
 
 
 @pytest.mark.parametrize(

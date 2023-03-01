@@ -35,7 +35,7 @@ My solutions to https://www.hackerrank.com problems.
 - [ ] 17 [Picking Numbers](https://www.hackerrank.com/challenges/picking-numbers)
 - [ ] 18 [Climbing the Leaderboard](https://www.hackerrank.com/challenges/climbing-the-leaderboard)
 - [ ] 19 [The Hurdle Race](https://www.hackerrank.com/challenges/the-hurdle-race)
-- [ ] 20 [Designer PDF Viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer)
+- [x] 20 [Designer PDF Viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer)
 - [x] 21 [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree)
 - [ ] 22 [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)
 - [ ] 23 [Beautiful Days at the Movies](https://www.hackerrank.com/challenges/beautiful-days-at-the-movies)
