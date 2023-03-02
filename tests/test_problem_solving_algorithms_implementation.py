@@ -165,6 +165,17 @@ def test_q30_extra_long_factorials(inputs, outputs, capsys):
 
 
 @pytest.mark.parametrize(
+    "inputs, outputs",
+    [
+        ([9, 6, 2015, 6, 6, 2015], 45),
+    ],
+    ids=['Test case 0']
+)
+def test_q33_library_fine(inputs, outputs):
+    assert q33_library_fine.libraryFine(*inputs) == outputs
+
+
+@pytest.mark.parametrize(
     "inputs, outputs", [
         (["aba", 10], 7),
         (["a", 1000000000000], 1000000000000)

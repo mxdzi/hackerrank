@@ -48,7 +48,7 @@ My solutions to https://www.hackerrank.com problems.
 - [x] 30 [Extra Long Factorials](https://www.hackerrank.com/challenges/extra-long-factorials)
 - [ ] 31 [Append and Delete](https://www.hackerrank.com/challenges/append-and-delete)
 - [ ] 32 [Sherlock and Squares](https://www.hackerrank.com/challenges/sherlock-and-squares)
-- [ ] 33 [Library Fine](https://www.hackerrank.com/challenges/library-fine)
+- [x] 33 [Library Fine](https://www.hackerrank.com/challenges/library-fine)
 - [ ] 34 [Cut the sticks](https://www.hackerrank.com/challenges/cut-the-sticks)
 - [ ] 35 [Non-Divisible Subset](https://www.hackerrank.com/challenges/non-divisible-subset)
 - [x] 36 [Repeated String](https://www.hackerrank.com/challenges/repeated-string)

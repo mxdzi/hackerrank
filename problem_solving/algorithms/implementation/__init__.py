@@ -15,6 +15,7 @@ __all__ = [
     'q24_strange_advertising',
     'q29_find_digits',
     'q30_extra_long_factorials',
+    'q33_library_fine',
     'q36_repeated_string',
     'q50_chocolate_feast',
 ]
