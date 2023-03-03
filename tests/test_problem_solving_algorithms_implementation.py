@@ -187,6 +187,16 @@ def test_q36_repeated_string(inputs, outputs):
 
 @pytest.mark.parametrize(
     "inputs, outputs", [
+        (['10101', '11100', '11010', '00101'], [5, 2]),
+        (['11101', '10101', '11001', '10111', '10000', '01110'], [5, 6]),
+    ], ids=['Test case 0', 'Test case 8']
+)
+def test_q40_acm_icpc_team(inputs, outputs):
+    assert q40_acm_icpc_team.acmTeam(inputs) == outputs
+
+
+@pytest.mark.parametrize(
+    "inputs, outputs", [
         ([(10, 2, 5), (12, 4, 4), (6, 2, 2)], [6, 3, 5]),
         ([(7, 3, 2)], [3])
     ], ids=['Test case 0', 'Test case 10']

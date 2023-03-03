@@ -17,5 +17,6 @@ __all__ = [
     'q30_extra_long_factorials',
     'q33_library_fine',
     'q36_repeated_string',
+    'q40_acm_icpc_team',
     'q50_chocolate_feast',
 ]
