@@ -9,6 +9,7 @@ __all__ = [
     'q9_day_of_the_programmer',
     'q11_sock_merchant',
     'q12_drawing_book',
+    'q14_electronics_shop',
     'q15_cats_and_a_mouse',
     'q20_designer_pdf_viewer',
     'q21_utopian_tree',

@@ -90,6 +90,17 @@ def test_q12_drawing_book():
 
 @pytest.mark.parametrize(
     "inputs, outputs", [
+        (([3, 1], [5, 2, 8,], 10), 9),
+        (([4], [5], 5), -1),
+
+    ], ids=['Test case 0', 'Test case 1']
+)
+def test_q14_electronics_shop(inputs, outputs):
+    assert outputs == q14_electronics_shop.getMoneySpent(*inputs)
+
+
+@pytest.mark.parametrize(
+    "inputs, outputs", [
         ([(1, 2, 3), (1, 3, 2)], ["Cat B", "Mouse C"])
     ],
     ids=['Test case 0']
