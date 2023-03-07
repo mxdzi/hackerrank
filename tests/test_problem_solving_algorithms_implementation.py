@@ -47,6 +47,18 @@ def test_q5_breaking_best_and_worst_records(inputs, outputs):
     assert outputs == q5_breaking_best_and_worst_records.breakingRecords(inputs)
 
 
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        (([1, 2, 1, 3, 2], 3, 2), 2),
+        (([1, 1, 1, 1, 1], 3, 2), 0),
+        (([4], 4, 1), 1),
+
+    ], ids=['Test case 0', 'Test case 1', 'Test case 2']
+)
+def test_q6_the_birthday_bar(inputs, outputs):
+    assert q6_the_birthday_bar.birthday(*inputs) == outputs
+
+
 def test_q7_divisible_sum_pairs():
     assert 5 == q7_divisible_sum_pairs.divisibleSumPairs(6, 3,
                                                          [1, 3, 2, 6, 1, 2])

@@ -4,6 +4,7 @@ __all__ = [
     'q3_kangaroo',
     'q4_between_two_sets',
     'q5_breaking_best_and_worst_records',
+    'q6_the_birthday_bar',
     'q7_divisible_sum_pairs',
     'q8_migratory_birds',
     'q9_day_of_the_programmer',
