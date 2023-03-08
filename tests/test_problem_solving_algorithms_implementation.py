@@ -220,6 +220,17 @@ def test_q40_acm_icpc_team(inputs, outputs):
 
 @pytest.mark.parametrize(
     "inputs, outputs", [
+        ((3, [1, 2, 4, 5, 7, 8, 10]), 3),
+        ((3, [1, 6, 7, 7, 8, 10, 12, 13, 14, 19]), 2),
+
+    ], ids=['Test case 0', 'Test case 10']
+)
+def test_q46_beautiful_triplets(inputs, outputs):
+    assert q46_beautiful_triplets.beautifulTriplets(*inputs) == outputs
+
+
+@pytest.mark.parametrize(
+    "inputs, outputs", [
         ([(10, 2, 5), (12, 4, 4), (6, 2, 2)], [6, 3, 5]),
         ([(7, 3, 2)], [3])
     ], ids=['Test case 0', 'Test case 10']
