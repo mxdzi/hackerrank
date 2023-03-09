@@ -25,7 +25,7 @@ My solutions to https://www.hackerrank.com problems.
 - [x] 7 [Divisible Sum Pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs)
 - [x] 8 [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds)
 - [x] 9 [Day of the Programmer](https://www.hackerrank.com/challenges/day-of-the-programmer)
-- [ ] 10 [Bill Division](https://www.hackerrank.com/challenges/bon-appetit)
+- [x] 10 [Bill Division](https://www.hackerrank.com/challenges/bon-appetit)
 - [x] 11 [Sales by Match](https://www.hackerrank.com/challenges/sock-merchant)
 - [x] 12 [Drawing Book ](https://www.hackerrank.com/challenges/drawing-book)
 - [ ] 13 [Counting Valleys](https://www.hackerrank.com/challenges/counting-valleys)

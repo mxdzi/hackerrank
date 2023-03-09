@@ -88,6 +88,19 @@ def test_q9_day_of_the_programmer(inputs, outputs):
     assert q9_day_of_the_programmer.dayOfProgrammer(inputs) == outputs
 
 
+@pytest.mark.parametrize(
+    "inputs, outputs", [
+        (([3, 10, 2, 9], 1, 12), "5\n"),
+        (([3, 10, 2, 9], 1, 7), "Bon Appetit\n"),
+    ],
+    ids=['Test case 0', 'Test case 1']
+)
+def test_q10_bon_appetit(inputs, outputs, capsys):
+    q10_bon_appetit.bonAppetit(*inputs)
+    captured = capsys.readouterr()
+    assert captured.out == outputs
+
+
 def test_q11_sock_merchant():
     assert q11_sock_merchant.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10,
                                               20]) == 3

@@ -8,6 +8,7 @@ __all__ = [
     'q7_divisible_sum_pairs',
     'q8_migratory_birds',
     'q9_day_of_the_programmer',
+    'q10_bon_appetit',
     'q11_sock_merchant',
     'q12_drawing_book',
     'q14_electronics_shop',
