@@ -15,7 +15,7 @@ My solutions to https://www.hackerrank.com problems.
 - [x] 8 [Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum)
 - [x] 9 [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles)
 - [x] 10 [Time Conversion](https://www.hackerrank.com/challenges/time-conversion)
-#### Implementation (23/50)
+#### Implementation (24/50)
 - [x] 1 [Grading Students](https://www.hackerrank.com/challenges/grading)
 - [x] 2 [Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange)
 - [x] 3 [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo)
