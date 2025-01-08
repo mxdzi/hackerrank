@@ -115,6 +115,17 @@ def test_q12_drawing_book():
 
 @pytest.mark.parametrize(
     "inputs, outputs", [
+        ((8, 'UDDDUDUU'), 1),
+        ((12, 'DDUUDDUDUUUD'), 2),
+
+    ], ids=['Test case 0', 'Test case 1']
+)
+def test_q13_counting_valleys(inputs, outputs):
+    assert outputs == q13_counting_valleys.countingValleys(*inputs)
+
+
+@pytest.mark.parametrize(
+    "inputs, outputs", [
         (([3, 1], [5, 2, 8,], 10), 9),
         (([4], [5], 5), -1),
 
